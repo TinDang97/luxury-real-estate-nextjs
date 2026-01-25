@@ -1,9 +1,12 @@
 import { notFound } from 'next/navigation';
 import projects from '@/data/projects.json';
 import dynamic from 'next/dynamic';
+import createMDX from '@next/mdx'
 import ProjectGallery from '@/components/project/ProjectGallery';
 import MortgageCalculator from '@/components/project/MortgageCalculator';
 import LeadCaptureForm from '@/components/project/LeadCaptureForm';
+import LocationMap from '@/components/project/LocationMap';
+import ProjectPricingPanel from '@/components/project/ProjectPricingPanel';
 
 export async function generateStaticParams() {
   return projects.map((p) => ({
@@ -77,54 +80,65 @@ export default async function ProjectPage({ params }: { params: { slug: string }
             </div>
 
             {/* Mortgage Calculator */}
-            <MortgageCalculator priceString={project.price} />
+            <MortgageCalculator 
+              priceString={project.price} 
+              priceOptions={(project as any).priceOptions}
+            />
+
+            {/* Location Map */}
+            <LocationMap 
+              address={(project as any).address || project.location}
+              projectName={project.title}
+              coordinates={(project as any).coordinates}
+            />
           </div>
 
+          {/* 3. Sticky Sidebar */}
           {/* 3. Sticky Sidebar */}
           <div className="lg:col-span-4 order-1 lg:order-2 relative">
             <div className="lg:sticky lg:top-24 space-y-6">
               
-              {/* Highlight Card */}
-              <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl border-t-4 border-accent relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-5">
-                   <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/></svg>
-                </div>
+              {/* Pricing Panel with Options */}
+              <ProjectPricingPanel 
+                initialPrice={project.price} 
+                priceOptions={(project as any).priceOptions}
+              />
 
-                <div className="mb-6">
-                  <p className="text-sm text-slate-500 uppercase tracking-widest font-semibold mb-1">Giá khởi điểm</p>
-                  <p className="text-3xl md:text-4xl font-serif font-bold text-primary">{project.price}</p>
-                </div>
-
-                <div className="space-y-4 mb-8">
-                  <div className="flex justify-between items-center py-3 border-b border-slate-100">
+              {/* Project Quick Info */}
+              <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <h3 className="font-bold text-lg mb-4 text-primary">Thông Tin Nhanh</h3>
+                <ul className="space-y-3">
+                  <li className="flex justify-between items-center py-2 border-b border-slate-100 last:border-b-0">
                     <span className="text-slate-500">Trạng thái</span>
                     <span className="font-bold text-green-600 bg-green-50 px-2 py-1 rounded">{project.tag}</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-slate-100">
+                  </li>
+                  <li className="flex justify-between items-center py-2 border-b border-slate-100 last:border-b-0">
                      <span className="text-slate-500">Quy mô</span>
                      <span className="font-medium text-slate-800 text-right">{project.scale}</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-slate-100">
+                  </li>
+                  <li className="flex justify-between items-center py-2 border-b border-slate-100 last:border-b-0">
                      <span className="text-slate-500">Chủ đầu tư</span>
                      <span className="font-medium text-slate-800 text-right">{project.investor}</span>
-                  </div>
-                </div>
+                  </li>
+                </ul>
+              </div>
 
-                {/* Lead Capture Form */}
-                <LeadCaptureForm />
-                
+              {/* Lead Capture Form */}
+              <div className="bg-slate-900 text-white p-6 rounded-2xl shadow-lg">
+                 <h3 className="font-serif text-xl font-bold mb-4">Đăng Ký Tư Vấn</h3>
+                 <LeadCaptureForm projectName={project.title} />
               </div>
 
               {/* Contact Info */}
-               <div className="bg-slate-900 text-white p-6 rounded-2xl shadow-lg">
-                <h3 className="font-serif text-xl font-bold mb-4">Hỗ trợ 24/7</h3>
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-slate-100">
+                <h3 className="font-serif text-xl font-bold mb-4 text-primary">Hỗ trợ 24/7</h3>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-xl">
                     📞
                   </div>
                   <div>
-                    <p className="text-slate-300 text-sm">Hotline Kinh Doanh</p>
-                    <p className="font-bold text-lg">0909 888 999</p>
+                    <p className="text-slate-500 text-sm">Hotline Kinh Doanh</p>
+                    <p className="font-bold text-lg text-primary">0909 888 999</p>
                   </div>
                 </div>
               </div>

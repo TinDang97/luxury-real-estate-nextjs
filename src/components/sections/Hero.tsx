@@ -1,4 +1,4 @@
-import Link from 'next/link';
+'use client';
 
 export default function Hero() {
   return (
@@ -16,12 +16,15 @@ export default function Hero() {
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-text-secondary mb-10 tracking-wide font-light">
           Chào mừng bạn đến với VN Luxury Realty - Nơi quy tụ những dự án bất động sản đẳng cấp nhất Việt Nam từ các chủ đầu tư uy tín.
         </p>
-        <Link 
-          href="/projects" 
-          className="inline-block bg-accent hover:bg-accent-hover text-primary py-4 px-10 rounded-sm font-bold text-lg transition-all transform hover:-translate-y-1 shadow-2xl"
+        <button 
+          onClick={() => {
+            const projectsSection = document.getElementById('featured-projects');
+            projectsSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }}
+          className="inline-block bg-accent hover:bg-accent-hover text-primary py-4 px-10 rounded-sm font-bold text-lg transition-all transform hover:-translate-y-1 shadow-2xl cursor-pointer"
         >
           XEM DỰ ÁN NỔI BẬT
-        </Link>
+        </button>
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">

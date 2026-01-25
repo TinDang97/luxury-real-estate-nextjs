@@ -2,7 +2,11 @@
 
 import { useState } from 'react';
 
-export default function LeadCaptureForm() {
+interface LeadCaptureFormProps {
+  projectName?: string;
+}
+
+export default function LeadCaptureForm({ projectName }: LeadCaptureFormProps) {
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -35,32 +39,32 @@ export default function LeadCaptureForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Họ và Tên</label>
+        <label htmlFor="name" className="block text-sm font-medium text-700 mb-1">Họ và Tên</label>
         <input 
           type="text" 
           id="name" 
           required 
-          className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all"
+          className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-slate-900"
           placeholder="Nhập họ tên..."
         />
       </div>
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">Số Điện Thoại</label>
+        <label htmlFor="phone" className="block text-sm font-medium text-700 mb-1">Số Điện Thoại</label>
         <input 
           type="tel" 
           id="phone" 
           required 
-          className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all"
+          className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-slate-900"
           placeholder="0909..."
         />
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email</label>
+        <label htmlFor="email" className="block text-sm font-medium text-700 mb-1">Email</label>
         <input 
           type="email" 
           id="email" 
           required 
-          className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all"
+          className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-slate-900"
           placeholder="email@example.com"
         />
       </div>

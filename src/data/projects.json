@@ -5,7 +5,20 @@
     "title": "The Global City",
     "description": "Biểu tượng Downtown City của Đông Nam Á - Một điểm đến quốc tế tại trung tâm An Phú, Quận 2.",
     "location": "Quận 2, Thủ Đức, TP.HCM",
+    "address": "Đường Đỗ Xuân Hợp, Phường An Phú, TP. Thủ Đức, TP.HCM",
+    "coordinates": {
+      "lat": 10.7994,
+      "lng": 106.7621
+    },
     "price": "Từ 36 tỷ (SOHO)",
+    "priceOptions": [
+      { "label": "Căn hộ 1PN (5 tỷ)", "value": 5000000000 },
+      { "label": "Căn hộ 2PN (7.5 tỷ)", "value": 7500000000 },
+      { "label": "Căn hộ 3PN (9.5 tỷ)", "value": 9500000000 },
+      { "label": "Nhà phố SOHO - Giá gốc (36 tỷ)", "value": 36000000000 },
+      { "label": "Nhà phố SOHO - Căn lớn (43 tỷ)", "value": 43000000000 },
+      { "label": "Nhà phố SOHO - Góc (80 tỷ)", "value": 80000000000 }
+    ],
     "tag": "ĐANG MỞ BÁN",
     "image": "/assets/images/project1.jpg",
     "category": "Khu đô thị hạng sang",

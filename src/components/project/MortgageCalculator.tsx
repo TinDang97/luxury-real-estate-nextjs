@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 
 interface MortgageCalculatorProps {
-  priceString: string; // e.g., "From 36 billion", "150 million/m2"... basic parsing needed or just manual input default
+  priceString: string;
+  priceOptions?: { label: string; value: number }[];
 }
 
-export default function MortgageCalculator({ priceString }: MortgageCalculatorProps) {
+export default function MortgageCalculator({ priceString, priceOptions }: MortgageCalculatorProps) {
   // Simple check to extract a numeric default if possible, else 10 billion default
   const defaultPrice = 10000000000; 
 
@@ -17,6 +18,13 @@ export default function MortgageCalculator({ priceString }: MortgageCalculatorPr
 
   useEffect(() => {
     if (!priceString) return;
+
+    // If options allow it, pick the first one as default? No, stick to parsing or lowest.
+    // Logic: If priceOptions exist, maybe set the first one?
+    if (priceOptions && priceOptions.length > 0) {
+       setPrice(priceOptions[0].value);
+       return;
+    }
 
     // Normalizing string: "Từ 36 tỷ (SOHO)" -> "36 tỷ"
     const lowerPrice = priceString.toLowerCase();
@@ -36,7 +44,7 @@ export default function MortgageCalculator({ priceString }: MortgageCalculatorPr
          setPrice(parseFloat(millionMatch[1]) * 1000000);
        }
     }
-  }, [priceString]);
+  }, [priceString, priceOptions]);
 
   const downPayment = (price * downPaymentPercent) / 100;
   const loanAmount = price - downPayment;
@@ -59,6 +67,20 @@ export default function MortgageCalculator({ priceString }: MortgageCalculatorPr
         <div className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-slate-600 mb-1">Giá trị Bất Động Sản (VND)</label>
+            
+            {priceOptions && priceOptions.length > 0 && (
+              <select 
+                className="w-full p-3 mb-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none bg-slate-50"
+                onChange={(e) => setPrice(Number(e.target.value))}
+                value={price}
+              >
+                {priceOptions.map((opt) => (
+                  <option key={opt.value} value={opt.value}>{opt.label}</option>
+                ))}
+                <option value={price}>Tùy chỉnh...</option>
+              </select>
+            )}
+
             <input 
               type="text" 
               value={new Intl.NumberFormat('vi-VN').format(price)}

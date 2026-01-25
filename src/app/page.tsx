@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
 
       {/* Featured Projects */}
-      <section className="container mx-auto px-5 py-24 reveal reveal-on-load">
+      <section id="featured-projects" className="container mx-auto px-5 py-24 reveal reveal-on-load">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Dự Án Tiêu Biểu</h2>
           <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
