@@ -1,0 +1,67 @@
+[
+  {
+    "id": "the-global-city",
+    "slug": "the-global-city",
+    "title": "The Global City",
+    "description": "Biểu tượng Downtown City của Đông Nam Á - Một điểm đến quốc tế tại trung tâm An Phú, Quận 2.",
+    "location": "Quận 2, Thủ Đức, TP.HCM",
+    "price": "Từ 36 tỷ (SOHO)",
+    "tag": "ĐANG MỞ BÁN",
+    "image": "/assets/images/project1.jpg",
+    "category": "Khu đô thị hạng sang",
+    "investor": "Masterise Homes",
+    "scale": "117.4 Hecta"
+  },
+  {
+    "id": "grand-marina-saigon",
+    "slug": "grand-marina-saigon",
+    "title": "The Grand Marina Saigon",
+    "description": "Căn hộ hàng hiệu Marriott lớn nhất thế giới tại trung tâm Quận 1.",
+    "location": "Quận 1, TP.HCM",
+    "price": "Từ 15 tỷ",
+    "tag": "ĐANG MỞ BÁN",
+    "image": "/assets/images/project2.jpg",
+    "category": "Căn hộ hàng hiệu",
+    "investor": "Masterise Homes",
+    "scale": "10 Hecta, 8 Block"
+  },
+  {
+    "id": "aqua-city",
+    "slug": "aqua-city",
+    "title": "Aqua City Riverside Villa",
+    "description": "Đô thị sinh thái thông minh phía Đông TP.HCM với 3 mặt giáp sông.",
+    "location": "Biên Hòa, Đồng Nai",
+    "price": "Từ 20 tỷ",
+    "tag": "BIỆT THỰ",
+    "image": "/assets/images/project_villa_1_1769325514109.png",
+    "category": "Biệt thự sinh thái",
+    "investor": "Novaland",
+    "scale": "1000 Hecta"
+  },
+  {
+    "id": "the-grand-manhattan",
+    "slug": "the-grand-manhattan",
+    "title": "The Grand Manhattan",
+    "description": "Biểu tượng thượng lưu tại lõi trung tâm Quận 1, lấy cảm hứng từ phong cách sống Manhattan.",
+    "location": "Quận 1, TP.HCM",
+    "price": "Từ 150 triệu/m2",
+    "tag": "TRUNG TÂM Q1",
+    "image": "/assets/images/manhattan.png",
+    "category": "Căn hộ hạng sang",
+    "investor": "Novaland",
+    "scale": "1.4 Hecta, 3 Block"
+  },
+  {
+    "id": "eco-village-saigon-river",
+    "slug": "eco-village-saigon-river",
+    "title": "Eco Village Saigon River",
+    "description": "Biểu tượng sống nghỉ dưỡng thượng lưu bên bờ sông Sài Gòn với mật độ cây xanh khổng lồ.",
+    "location": "Nhơn Trạch, Đồng Nai",
+    "price": "68 - 130 triệu/m2",
+    "tag": "HOT PROJECT",
+    "image": "/assets/images/project_condo_1_1769325498044.png",
+    "category": "Township Nghỉ dưỡng",
+    "investor": "Tập đoàn Ecopark",
+    "scale": "55 Hecta"
+  }
+]
