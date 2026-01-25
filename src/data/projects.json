@@ -19,6 +19,25 @@
       { "label": "Nhà phố SOHO - Căn lớn (43 tỷ)", "value": 43000000000 },
       { "label": "Nhà phố SOHO - Góc (80 tỷ)", "value": 80000000000 }
     ],
+    "paymentSchemes": [
+      {
+        "title": "Thanh Toán Chuẩn",
+        "steps": [
+          { "label": "Đặt cọc", "value": "500 Triệu / 1 Tỷ" },
+          { "label": "Đợt 1 - 7", "value": "10% / Đợt" },
+          { "label": "Đợt 8 (Bàn giao)", "value": "15%" },
+          { "label": "Đợt 9 (Sổ hồng)", "value": "5%" }
+        ]
+      },
+      {
+        "title": "Thanh Toán Nhanh",
+        "steps": [
+          { "label": "Đặt cọc", "value": "500 Triệu / 1 Tỷ" },
+          { "label": "Đợt 1 (7 ngày)", "value": "50%" },
+          { "label": "Đợt 2 (90 ngày)", "value": "50%" }
+        ]
+      }
+    ],
     "tag": "ĐANG MỞ BÁN",
     "image": "/assets/images/project1.jpg",
     "category": "Khu đô thị hạng sang",

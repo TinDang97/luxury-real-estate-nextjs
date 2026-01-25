@@ -5,9 +5,10 @@ import { useState, useEffect } from 'react';
 interface PricingPanelProps {
   initialPrice: string;
   priceOptions?: { label: string; value: number }[];
+  onPriceSelect?: (value: number) => void;
 }
 
-export default function ProjectPricingPanel({ initialPrice, priceOptions }: PricingPanelProps) {
+export default function ProjectPricingPanel({ initialPrice, priceOptions, onPriceSelect }: PricingPanelProps) {
   const [displayedPrice, setDisplayedPrice] = useState(initialPrice);
   const [selectedOption, setSelectedOption] = useState('');
   const [isFading, setIsFading] = useState(false);
@@ -23,8 +24,12 @@ export default function ProjectPricingPanel({ initialPrice, priceOptions }: Pric
   useEffect(() => {
     if (priceOptions && priceOptions.length > 0) {
       // Default to the first option
-      setSelectedOption(priceOptions[0].value.toString());
-      setDisplayedPrice(`Từ ${formatCurrency(priceOptions[0].value)}`);
+      const firstVal = priceOptions[0].value;
+      setSelectedOption(firstVal.toString());
+      setDisplayedPrice(`Từ ${formatCurrency(firstVal)}`);
+      // Initial callback only if we want to force set the parent default? 
+      // Maybe logic is: Parent sends default, or we sync up. 
+      // For now avoid infinite loops, assume parent/calc has same default logic (it does).
     } else {
       setDisplayedPrice(initialPrice);
     }
@@ -35,6 +40,11 @@ export default function ProjectPricingPanel({ initialPrice, priceOptions }: Pric
 
     setSelectedOption(value.toString());
     setIsFading(true);
+    
+    // Notify parent
+    if (onPriceSelect) {
+      onPriceSelect(value);
+    }
     
     setTimeout(() => {
       setDisplayedPrice(`Từ ${formatCurrency(value)}`);

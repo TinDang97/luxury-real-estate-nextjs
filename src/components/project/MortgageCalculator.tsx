@@ -5,9 +5,11 @@ import { useState, useEffect } from 'react';
 interface MortgageCalculatorProps {
   priceString: string;
   priceOptions?: { label: string; value: number }[];
+  paymentSchemes?: { title: string; steps: { label: string; value: string }[] }[];
+  overridePrice?: number | null;
 }
 
-export default function MortgageCalculator({ priceString, priceOptions }: MortgageCalculatorProps) {
+export default function MortgageCalculator({ priceString, priceOptions, paymentSchemes, overridePrice }: MortgageCalculatorProps) {
   // Simple check to extract a numeric default if possible, else 10 billion default
   const defaultPrice = 10000000000; 
 
@@ -15,8 +17,15 @@ export default function MortgageCalculator({ priceString, priceOptions }: Mortga
   const [downPaymentPercent, setDownPaymentPercent] = useState(30);
   const [loanTerm, setLoanTerm] = useState(20);
   const [interestRate, setInterestRate] = useState(8.5);
+  const [activeSchemeIndex, setActiveSchemeIndex] = useState(0);
 
   useEffect(() => {
+    // If overridePrice is provided (from sidebar selection), use it immediately
+    if (overridePrice !== undefined && overridePrice !== null) {
+      setPrice(overridePrice);
+      return;
+    }
+
     if (!priceString) return;
 
     // If options allow it, pick the first one as default? No, stick to parsing or lowest.
@@ -44,7 +53,7 @@ export default function MortgageCalculator({ priceString, priceOptions }: Mortga
          setPrice(parseFloat(millionMatch[1]) * 1000000);
        }
     }
-  }, [priceString, priceOptions]);
+  }, [priceString, priceOptions, overridePrice]);
 
   const downPayment = (price * downPaymentPercent) / 100;
   const loanAmount = price - downPayment;
@@ -84,6 +93,7 @@ export default function MortgageCalculator({ priceString, priceOptions }: Mortga
             <input 
               type="text" 
               value={new Intl.NumberFormat('vi-VN').format(price)}
+              disabled
               onChange={(e) => {
                 const numericValue = Number(e.target.value.replace(/[^0-9]/g, ''));
                 if (!isNaN(numericValue)) {
@@ -147,11 +157,39 @@ export default function MortgageCalculator({ priceString, priceOptions }: Mortga
                <span>Thuế trước bạ (est. 0.5%):</span>
                <span className="font-medium">{formatCurrency(price * 0.005)}</span>
             </div>
-             <div className="flex justify-between">
-               <span>Phí môi giới/Khác:</span>
-               <span className="font-medium">Liên hệ</span>
-            </div>
           </div>
+
+          {/* Payment Schemes Display */}
+          {paymentSchemes && paymentSchemes.length > 0 && (
+            <div className="mt-8 pt-6 border-t-2 border-dashed border-slate-200">
+              <h4 className="font-bold text-base text-primary mb-3">Lịch Thanh Toán Tham Khảo</h4>
+              
+              <div className="flex gap-2 mb-3 overflow-x-auto pb-1">
+                {paymentSchemes.map((scheme, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveSchemeIndex(idx)}
+                    className={`text-xs px-3 py-1.5 rounded-full whitespace-nowrap transition-colors ${
+                      activeSchemeIndex === idx 
+                        ? 'bg-accent text-white font-bold' 
+                        : 'bg-slate-200 text-slate-600 hover:bg-slate-300'
+                    }`}
+                  >
+                    {scheme.title}
+                  </button>
+                ))}
+              </div>
+
+              <div className="bg-white p-4 rounded-lg border border-slate-200 text-sm space-y-2">
+                {paymentSchemes[activeSchemeIndex].steps.map((step, idx) => (
+                  <div key={idx} className="flex justify-between items-center text-slate-700">
+                    <span className="font-medium text-xs uppercase tracking-wide">{step.label}</span>
+                    <span className="font-bold text-primary">{step.value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
           
           <p className="text-xs text-slate-400 mt-6 italic">
             *Kết quả chỉ mang tính chất tham khảo. Lãi suất thực tế có thể thay đổi tùy ngân hàng.
