@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "title": "Welcome to The Global City",
+    "desc": "The new downtown of Southeast Asia"
+  },
+  "Hero": {
+    "title": "Discover Your",
+    "titleAccent": "Luxury Lifestyle",
+    "subtitle": "Welcome to VN Luxury Realty - The collection of most elite real estate projects in Vietnam from prestigious developers.",
+    "cta": "VIEW FEATURED PROJECTS"
+  },
+  "Common": {
+    "contact": "CONTACT",
+    "viewDetail": "View Detail"
+  },
+  "ProjectsPage": {
+    "title": "All Projects",
+    "subtitle": "Discover an elite collection of luxury real estate across Vietnam"
+  }
+}

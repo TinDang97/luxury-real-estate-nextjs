@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "title": "Chào mừng đến với The Global City",
+    "desc": "Trung tâm mới của Đông Nam Á"
+  },
+  "Hero": {
+    "title": "Khám Phá Không Gian",
+    "titleAccent": "Sống Thượng Lưu",
+    "subtitle": "Chào mừng bạn đến với VN Luxury Realty - Nơi quy tụ những dự án bất động sản đẳng cấp nhất Việt Nam từ các chủ đầu tư uy tín.",
+    "cta": "XEM DỰ ÁN NỔI BẬT"
+  },
+  "Common": {
+    "contact": "LIÊN HỆ NGAY",
+    "viewDetail": "Xem Chi Tiết"
+  },
+  "ProjectsPage": {
+    "title": "Tất Cả Dự Án",
+    "subtitle": "Khám phá bộ sưu tập bất động sản hạng sang trên khắp Việt Nam"
+  }
+}

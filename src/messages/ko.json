@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "title": "The Global City에 오신 것을 환영합니다",
+    "desc": "동남아시아의 새로운 다운타운"
+  },
+  "Hero": {
+    "title": "당신만의",
+    "titleAccent": "럭셔리 라이프스타일",
+    "subtitle": "VN Luxury Realty에 오신 것을 환영합니다 - 권위 있는 개발사들이 참여한 베트남 최고의 엘리트 부동산 프로젝트 컬렉션입니다.",
+    "cta": "주요 프로젝트 보기"
+  },
+  "Common": {
+    "contact": "상담문의",
+    "viewDetail": "상세보기"
+  },
+  "ProjectsPage": {
+    "title": "모든 프로젝트",
+    "subtitle": "베트남 전역의 럭셔리 부동산 컬렉션을 만나보세요"
+  }
+}

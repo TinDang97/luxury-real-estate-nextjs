@@ -1,0 +1,237 @@
+{
+  "_type": "project",
+  "language": "vn",
+  "title": "The Global City",
+  "slug": {
+    "current": "the-global-city"
+  },
+  "category": "Khu đô thị",
+  "location": "Quận 2, TP. Hồ Chí Minh",
+  "developer": "Masterise Homes",
+  "price": "Từ 2.5 tỷ - 15 tỷ",
+  "status": "selling",
+  "overview": "The Global City là khu đô thị đẳng cấp quốc tế tại Quận 2, TP.HCM với quy mô 117.4ha, mang đến không gian sống hiện đại và đầy đủ tiện ích cho cư dân.",
+  "content": [
+    {
+      "_type": "hero",
+      "_key": "hero1",
+      "title": "The Global City",
+      "subtitle": "Trung tâm mới của Đông Nam Á",
+      "backgroundImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-[upload-hero-image]"
+        }
+      },
+      "ctaText": "Đăng ký tư vấn",
+      "ctaLink": "#register"
+    },
+    {
+      "_type": "block",
+      "_key": "intro",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Global City là dự án khu đô thị phức hợp đẳng cấp quốc tế do Masterise Homes phát triển, nằm tại vị trí chiến lược ở Quận 2, TP. Hồ Chí Minh. Với tổng diện tích 117.4 ha, dự án hứa hẹn trở thành trung tâm mới của Đông Nam Á với đầy đủ tiện ích hiện đại."
+        }
+      ]
+    },
+    {
+      "_type": "infoGrid",
+      "_key": "specs",
+      "title": "Thông tin tổng quan",
+      "gridItems": [
+        {
+          "_key": "scale",
+          "label": "Quy mô",
+          "value": "117.4 ha"
+        },
+        {
+          "_key": "units",
+          "label": "Số căn hộ",
+          "value": "~ 18,000 căn"
+        },
+        {
+          "_key": "developer",
+          "label": "Chủ đầu tư",
+          "value": "Masterise Homes"
+        },
+        {
+          "_key": "handover",
+          "label": "Bàn giao",
+          "value": "Q4/2024 - Q4/2028"
+        },
+        {
+          "_key": "legal",
+          "label": "Pháp lý",
+          "value": "Sổ hồng lâu dài"
+        },
+        {
+          "_key": "density",
+          "label": "Mật độ xây dựng",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "_type": "featureList",
+      "_key": "amenities",
+      "title": "Tiện ích nội khu",
+      "subtitle": "Hơn 100 tiện ích đẳng cấp quốc tế",
+      "features": [
+        {
+          "_key": "f1",
+          "icon": "🏊",
+          "title": "Hồ bơi vô cực",
+          "description": "Hệ thống hồ bơi cao cấp với tầm nhìn panorama"
+        },
+        {
+          "_key": "f2",
+          "icon": "🏋️",
+          "title": "Gym & Yoga",
+          "description": "Phòng gym hiện đại và khu vực yoga ngoài trời"
+        },
+        {
+          "_key": "f3",
+          "icon": "🌳",
+          "title": "Công viên trung tâm",
+          "description": "Công viên rộng 36ha với cảnh quan tự nhiên"
+        },
+        {
+          "_key": "f4",
+          "icon": "🏫",
+          "title": "Trường học quốc tế",
+          "description": "Hệ thống giáo dục từ mầm non đến THPT"
+        },
+        {
+          "_key": "f5",
+          "icon": "🛍️",
+          "title": "Trung tâm thương mại",
+          "description": "Vincom & các thương hiệu cao cấp"
+        },
+        {
+          "_key": "f6",
+          "icon": "🏥",
+          "title": "Bệnh viện quốc tế",
+          "description": "Cơ sở y tế đạt chuẩn quốc tế"
+        }
+      ]
+    },
+    {
+      "_type": "gallery",
+      "_key": "gallery1",
+      "title": "Thư viện hình ảnh",
+      "images": [
+        {
+          "_key": "img1",
+          "asset": {
+            "_ref": "image-[upload-gallery-1]"
+          },
+          "caption": "Phối cảnh tổng thể dự án"
+        },
+        {
+          "_key": "img2",
+          "asset": {
+            "_ref": "image-[upload-gallery-2]"
+          },
+          "caption": "Khu vực công viên trung tâm"
+        },
+        {
+          "_key": "img3",
+          "asset": {
+            "_ref": "image-[upload-gallery-3]"
+          },
+          "caption": "Tiện ích hồ bơi vô cực"
+        }
+      ]
+    },
+    {
+      "_type": "locationMap",
+      "_key": "location",
+      "title": "Vị trí chiến lược",
+      "description": "Tọa lạc tại vị trí đắc địa Quận 2, kết nối dễ dàng với các khu vực trọng điểm.",
+      "coordinates": {
+        "lat": 10.8004,
+        "lng": 106.7473
+      },
+      "nearbyPlaces": [
+        {
+          "_key": "p1",
+          "name": "Sân bay Tân Sơn Nhất",
+          "distance": "15 phút",
+          "icon": "✈️"
+        },
+        {
+          "_key": "p2",
+          "name": "Trung tâm Q1",
+          "distance": "10 phút",
+          "icon": "🏙️"
+        },
+        {
+          "_key": "p3",
+          "name": "Vincity Quận 9",
+          "distance": "5 phút",
+          "icon": "🏘️"
+        }
+      ]
+    },
+    {
+      "_type": "infoTable",
+      "_key": "payment",
+      "title": "Chính sách thanh toán",
+      "rows": [
+        {
+          "_key": "r1",
+          "label": "Đặt cọc",
+          "value": "50 triệu VNĐ"
+        },
+        {
+          "_key": "r2",
+          "label": "Ký HĐMB",
+          "value": "30% giá trị căn hộ"
+        },
+        {
+          "_key": "r3",
+          "label": "Trong quá trình xây dựng",
+          "value": "40% theo tiến độ"
+        },
+        {
+          "_key": "r4",
+          "label": "Nhận nhà",
+          "value": "30% còn lại"
+        }
+      ]
+    },
+    {
+      "_type": "mortgageCalculator",
+      "_key": "calculator",
+      "title": "Tính toán vay mua nhà",
+      "maxLoanAmount": 15000000000,
+      "defaultInterestRate": 8.5,
+      "defaultLoanTerm": 20
+    },
+    {
+      "_type": "banner",
+      "_key": "cta-banner",
+      "title": "Đặt chỗ ngay hôm nay",
+      "subtitle": "Nhận ưu đãi đặc biệt lên đến 5%",
+      "ctaText": "Liên hệ ngay",
+      "ctaLink": "#register",
+      "backgroundImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-[upload-cta-bg]"
+        }
+      },
+      "style": "dark"
+    },
+    {
+      "_type": "inlineRegisterForm",
+      "_key": "register",
+      "title": "Đăng ký nhận tư vấn",
+      "subtitle": "Để lại thông tin, chúng tôi sẽ liên hệ trong 24h",
+      "submitText": "Gửi thông tin"
+    }
+  ]
+}
