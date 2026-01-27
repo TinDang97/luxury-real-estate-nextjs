@@ -45,5 +45,10 @@
     "address": "주소",
     "addressText": "호치민시 2군 안푸, 도쑤안홉",
     "copyright": "© 2024 VN Luxury Realty. All rights reserved."
+  },
+  "LocationMap": {
+    "title": "프로젝트 위치",
+    "defaultAddress": "호치민시 2군",
+    "getDirections": "길 찾기"
   }
 }

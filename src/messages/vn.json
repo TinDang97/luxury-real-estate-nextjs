@@ -45,5 +45,10 @@
     "address": "Địa Chỉ",
     "addressText": "Đỗ Xuân Hợp, An Phú, Quận 2, TP.HCM",
     "copyright": "© 2024 VN Luxury Realty. Bảo lưu mọi quyền."
+  },
+  "LocationMap": {
+    "title": "Vị Trí Dự Án",
+    "defaultAddress": "Quận 2, TP. Hồ Chí Minh",
+    "getDirections": "Chỉ Đường"
   }
 }

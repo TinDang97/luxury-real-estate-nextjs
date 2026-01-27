@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 interface LocationMapProps {
   address?: string;
@@ -10,6 +11,7 @@ interface LocationMapProps {
 }
 
 export default function LocationMap({ address, latitude, longitude, projectName }: LocationMapProps) {
+  const t = useTranslations('LocationMap');
   const mapQuery = (latitude && longitude)
     ? `${latitude},${longitude}`
     : encodeURIComponent(address || projectName);
@@ -29,7 +31,7 @@ export default function LocationMap({ address, latitude, longitude, projectName 
           viewport={{ once: true }}
           className="text-3xl md:text-5xl xl:text-6xl font-serif text-slate-900 mb-16 text-center uppercase tracking-[0.2em]"
         >
-           Vị Trí Dự Án
+           {t('title')}
         </motion.h2>
         
         <motion.div 
@@ -58,7 +60,7 @@ export default function LocationMap({ address, latitude, longitude, projectName 
                  transition={{ delay: 0.4 }}
                  className="text-slate-600 text-sm leading-relaxed mb-8"
                >
-                 {address || "District 2, Ho Chi Minh City"}
+                 {address || t('defaultAddress')}
                </motion.p>
                
                <motion.a 
@@ -69,7 +71,7 @@ export default function LocationMap({ address, latitude, longitude, projectName 
                  rel="noopener noreferrer"
                  className="inline-flex items-center gap-2 bg-[#0c1a2c] text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-slate-800 transition-all uppercase tracking-widest shadow-lg"
                >
-                 <span>Chỉ Đường</span> ↗
+                 <span>{t('getDirections')}</span> ↗
                </motion.a>
             </div>
 

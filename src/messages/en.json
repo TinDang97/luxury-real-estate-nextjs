@@ -45,5 +45,10 @@
     "address": "Address",
     "addressText": "Do Xuan Hop, An Phu, District 2, HCMC",
     "copyright": "© 2024 VN Luxury Realty. All rights reserved."
+  },
+  "LocationMap": {
+    "title": "Project Location",
+    "defaultAddress": "District 2, Ho Chi Minh City",
+    "getDirections": "Get Directions"
   }
 }
