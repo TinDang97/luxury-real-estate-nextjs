@@ -16,5 +16,34 @@
   "ProjectsPage": {
     "title": "Tất Cả Dự Án",
     "subtitle": "Khám phá bộ sưu tập bất động sản hạng sang trên khắp Việt Nam"
+  },
+  "MortgageCalculator": {
+    "title": "Tính Toán Khoản Vay",
+    "selectUnitType": "Chọn Loại Hình (VND)",
+    "priceLabel": "Giá Trị Bất Động Sản (VND)",
+    "interestLabel": "Lãi Suất (%)",
+    "termLabel": "Thời Hạn Vay (Năm)",
+    "current": "Hiện Tại",
+    "average": "Trung Bình Việt Nam",
+    "monthlyPayment": "Trả Góp Hàng Tháng",
+    "disclaimer": "* Ước tính tham khảo. Lãi suất thực tế có thể thay đổi tùy hồ sơ vay."
+  },
+  "Header": {
+    "home": "Trang Chủ",
+    "projects": "Dự Án",
+    "about": "Giới Thiệu",
+    "contact": "Liên Hệ"
+  },
+  "Footer": {
+    "about": "Về Chúng Tôi",
+    "aboutDesc": "Đơn vị phân phối bất động sản hạng sang hàng đầu tại Việt Nam.",
+    "links": "Liên Kết Nhanh",
+    "home": "Trang Chủ",
+    "projects": "Dự Án",
+    "news": "Tin Tức",
+    "contact": "Liên Hệ",
+    "address": "Địa Chỉ",
+    "addressText": "Đỗ Xuân Hợp, An Phú, Quận 2, TP.HCM",
+    "copyright": "© 2024 VN Luxury Realty. Bảo lưu mọi quyền."
   }
 }

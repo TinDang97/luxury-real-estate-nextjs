@@ -307,7 +307,15 @@ const globalCityData = {
       _type: 'mortgageCalculator',
       _key: 'calculator',
       title: 'Tính toán khoản vay mua nhà',
-      defaultPrice: 5000000000
+      defaultPrice: 36000000000,
+      priceOptions: [
+        { label: "Căn hộ 1PN", value: 5000000000 },
+        { label: "Căn hộ 2PN", value: 7500000000 },
+        { label: "Căn hộ 3PN", value: 9500000000 },
+        { label: "Nhà phố SOHO", value: 36000000000 },
+        { label: "Nhà phố SOHO (Lớn)", value: 43000000000 },
+        { label: "Nhà phố SOHO (Góc)", value: 80000000000 }
+      ]
     },
     {
       _type: 'banner',

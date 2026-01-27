@@ -16,5 +16,34 @@
   "ProjectsPage": {
     "title": "모든 프로젝트",
     "subtitle": "베트남 전역의 럭셔리 부동산 컬렉션을 만나보세요"
+  },
+  "MortgageCalculator": {
+    "title": "주택 담보 대출 계산기",
+    "selectUnitType": "유닛 유형 선택 (VND)",
+    "priceLabel": "프로젝트 가격 (VND)",
+    "interestLabel": "이자율 (%)",
+    "termLabel": "대출 기간 (년)",
+    "current": "현재",
+    "average": "베트남 평균",
+    "monthlyPayment": "월 예상 납입금",
+    "disclaimer": "* 참고용 견적입니다. 실제 은행 금리는 프로필에 따라 다를 수 있습니다."
+  },
+  "Header": {
+    "home": "홈",
+    "projects": "프로젝트",
+    "about": "회사 소개",
+    "contact": "문의하기"
+  },
+  "Footer": {
+    "about": "회사 소개",
+    "aboutDesc": "베트남 최고의 럭셔리 부동산 중개 에이전시.",
+    "links": "빠른 링크",
+    "home": "홈",
+    "projects": "프로젝트",
+    "news": "뉴스",
+    "contact": "문의하기",
+    "address": "주소",
+    "addressText": "호치민시 2군 안푸, 도쑤안홉",
+    "copyright": "© 2024 VN Luxury Realty. All rights reserved."
   }
 }

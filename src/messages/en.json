@@ -16,5 +16,34 @@
   "ProjectsPage": {
     "title": "All Projects",
     "subtitle": "Discover an elite collection of luxury real estate across Vietnam"
+  },
+  "MortgageCalculator": {
+    "title": "Mortgage Calculator",
+    "selectUnitType": "Select Unit Type (VND)",
+    "priceLabel": "Project Price (VND)",
+    "interestLabel": "Interest Rate (%)",
+    "termLabel": "Loan Term (Years)",
+    "current": "Current",
+    "average": "Vietnam Average",
+    "monthlyPayment": "Estimated Monthly Payment",
+    "disclaimer": "* Reference estimate only. Actual bank rates may vary per profile."
+  },
+  "Header": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "about": "About Us",
+    "aboutDesc": "Premier luxury real estate agency in Vietnam.",
+    "links": "Quick Links",
+    "home": "Home",
+    "projects": "Projects",
+    "news": "News",
+    "contact": "Contact",
+    "address": "Address",
+    "addressText": "Do Xuan Hop, An Phu, District 2, HCMC",
+    "copyright": "© 2024 VN Luxury Realty. All rights reserved."
   }
 }

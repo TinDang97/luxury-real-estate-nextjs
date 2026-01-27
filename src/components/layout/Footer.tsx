@@ -1,32 +1,45 @@
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+
 export default function Footer() {
+  const t = useTranslations('Footer');
+  
   return (
-    <footer className="bg-primary text-text-secondary py-16 border-t border-white/10">
-      <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div>
-          <h3 className="text-accent text-xl font-bold mb-5">VN Luxury Realty</h3>
-          <p className="max-w-xs text-sm leading-relaxed">
-            Kiến tạo giá trị sống thượng lưu. Chúng tôi mang đến những giải pháp bất động sản đẳng cấp nhất tại Việt Nam.
-          </p>
-        </div>
-        <div>
-          <h4 className="text-white text-lg font-semibold mb-5">Liên Kết Nhanh</h4>
-          <ul className="space-y-3 text-sm">
-            <li><a href="/projects" className="hover:text-accent transition-colors">Dự án mới</a></li>
-            <li><a href="/#news" className="hover:text-accent transition-colors">Tin tức thị trường</a></li>
-            <li><a href="/policy" className="hover:text-accent transition-colors">Chính sách bảo mật</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-white text-lg font-semibold mb-5">Thông Tin Liên Hệ</h4>
-          <div className="space-y-3 text-sm">
-            <p className="flex items-center gap-2"><span className="text-accent">📍</span> 123 Lê Lợi, Quận 1, TP.HCM</p>
-            <p className="flex items-center gap-2"><span className="text-accent">📞</span> 0123 456 789</p>
-            <p className="flex items-center gap-2"><span className="text-accent">📧</span> contact@vnluxury.vn</p>
+    <footer className="bg-primary text-white pt-24 pb-12">
+      <div className="container mx-auto px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+          <div>
+            <Link href="/" className="text-2xl font-extrabold text-accent uppercase tracking-wider mb-6 block">
+              VN Luxury Realty
+            </Link>
+            <p className="text-white/60 text-sm leading-relaxed mb-6">
+              {t('aboutDesc')}
+            </p>
+          </div>
+          
+          <div>
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] mb-6 text-accent">{t('links')}</h4>
+            <ul className="space-y-4 text-sm text-white/60">
+              <li><Link href="/" className="hover:text-white transition-colors">{t('home')}</Link></li>
+              <li><Link href="/projects" className="hover:text-white transition-colors">{t('projects')}</Link></li>
+              <li><Link href="/news" className="hover:text-white transition-colors">{t('news')}</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">{t('contact')}</Link></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] mb-6 text-accent">{t('address')}</h4>
+            <p className="text-white/60 text-sm leading-relaxed">
+              {t('addressText')}<br />
+              Email: contact@vnluxuryrealty.com<br />
+              Hotline: 0909 888 999
+            </p>
           </div>
         </div>
-      </div>
-      <div className="container mx-auto px-5 mt-10 pt-5 border-t border-white/5 text-center text-xs">
-        <p>&copy; 2026 VN Luxury Realty. Tất cả quyền được bảo lưu.</p>
+        
+        <div className="pt-8 border-t border-white/10 text-center text-xs text-white/40 tracking-widest uppercase">
+          {t('copyright')}
+        </div>
       </div>
     </footer>
   );

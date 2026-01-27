@@ -3,12 +3,13 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const locale = useLocale();
+  const t = useTranslations('Header');
   const pathname = usePathname();
   const router = useRouter();
 
@@ -42,9 +43,9 @@ export default function Header() {
           VN Luxury Realty
         </Link>
         <nav className="hidden lg:flex gap-10">
-          <Link href={`/${locale}`} className="text-[11px] font-bold text-white uppercase tracking-[0.2em] hover:text-accent transition-all">Home</Link>
-          <Link href={`/${locale}/projects`} className="text-[11px] font-bold text-white uppercase tracking-[0.2em] hover:text-accent transition-all">Projects</Link>
-          <Link href={`/${locale}/#about`} className="text-[11px] font-bold text-white uppercase tracking-[0.2em] hover:text-accent transition-all">About</Link>
+          <Link href={`/${locale}`} className="text-[11px] font-bold text-white uppercase tracking-[0.2em] hover:text-accent transition-all">{t('home')}</Link>
+          <Link href={`/${locale}/projects`} className="text-[11px] font-bold text-white uppercase tracking-[0.2em] hover:text-accent transition-all">{t('projects')}</Link>
+          <Link href={`/${locale}/#about`} className="text-[11px] font-bold text-white uppercase tracking-[0.2em] hover:text-accent transition-all">{t('about')}</Link>
         </nav>
 
         <div className="flex items-center gap-6">
@@ -88,7 +89,7 @@ export default function Header() {
             href="tel:0123456789" 
             className="hidden sm:block bg-[#c5a059] text-white px-6 py-2.5 rounded-sm font-bold text-[10px] tracking-[0.2em] hover:bg-[#b08d4a] transition-all shadow-lg"
           >
-            CONTACT
+            {t('contact')}
           </Link>
         </div>
       </div>
