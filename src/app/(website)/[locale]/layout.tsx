@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   description: "Chuyên trang giới thiệu các dự án bất động sản hạng sang, biệt thự và căn hộ cao cấp tại Việt Nam.",
 };
 
+export function generateStaticParams() {
+  return [{locale: 'en'}, {locale: 'vn'}, {locale: 'ko'}];
+}
+
 export default async function LocaleLayout({
   children,
   params

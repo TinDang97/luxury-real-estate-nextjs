@@ -19,6 +19,45 @@ const components = {
   gallery: Gallery,
 };
 
+// SSG: Generate params for all projects and locales
+export async function generateStaticParams() {
+  // Fetch all projects (we only need the slug)
+  // We fetch VN projects as base, but actually we should fetch ALL language variations if they have different slugs.
+  // In our case, slugs seem shared or similar, but we should be robust.
+  // For simplicity, let's assuming slugs are unique per project concept or we iterate all.
+  
+  // NOTE: In a real multi-language setup, we might have different slugs for different languages 
+  // OR the same slug. The current query `projectBySlugQuery` filters by language. 
+  // If we want to pre-render /en/projects/foo and /vn/projects/foo, we need "foo" in the list.
+  
+  // Let's fetch ALL projects regardless of language to get unique slugs.
+  // But wait, `projectsQuery` filters by language.
+  
+  // Let's iterate supported locales.
+  const locales = ['en', 'vn', 'ko'];
+  const paths: Array<{ slug: string; locale: string }> = [];
+
+  for (const locale of locales) {
+    // We need a simple query for slugs. 
+    // We can reuse `projectsQuery` or make a lighter one.
+    // For now, let's use client.fetch with a custom query for speed.
+    const slugs = await client.fetch(
+        `*[_type == "project" && (language == $locale || (!defined(language) && $locale == "vn"))].slug.current`,
+        { locale }
+    );
+    
+    if (slugs && Array.isArray(slugs)) {
+        slugs.forEach((slug: string) => {
+             if (slug) {
+                 paths.push({ slug, locale });
+             }
+        });
+    }
+  }
+
+  return paths;
+}
+
 export default async function ProjectPage({
   params,
 }: {
