@@ -155,7 +155,7 @@ export default function Header({ recentProjects = [] }: { recentProjects?: Proje
                   initial={{ opacity: 0, y: 10, scale: 0.95 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                  className="absolute right-0 mt-3 w-32 bg-[#0c1a2c]/fb backdrop-blur-2xl border border-white/10 rounded-xl overflow-hidden shadow-2xl"
+                  className="absolute right-0 mt-3 w-32 bg-[#0c1a2c]/95 backdrop-blur-2xl border border-white/10 rounded-xl overflow-hidden shadow-2xl"
                 >
                   {locales.map((l) => (
                     <button

@@ -47,6 +47,7 @@ export default function Hero({ heading, category, location, backgroundImage }: H
             src={bgUrl}
             alt={heading}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />

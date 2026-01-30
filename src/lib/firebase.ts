@@ -1,27 +1,38 @@
 import { initializeApp, getApps } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAnalytics, Analytics } from "firebase/analytics";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  apiKey: "AIzaSyAhO2h2vrpoI9-GGEhPBdhkvpDxuVorbBM",
+  authDomain: "luxhome-b7f99.firebaseapp.com",
+  projectId: "luxhome-b7f99",
+  storageBucket: "luxhome-b7f99.firebasestorage.app",
+  messagingSenderId: "168545445896",
+  appId: "1:168545445896:web:ce064e11b1b28360d889bd",
+  measurementId: "G-EEJXQ7L386"
 };
 
 // Initialize Firebase (Singleton pattern)
-// We use a try-catch to prevent app-wide crashes if the config is invalid
 let app;
 let db: any = null;
+let analytics: Analytics | null = null;
 
 try {
-    if (firebaseConfig.projectId) {
-        app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
-        db = getFirestore(app);
+    // Initialize app
+    app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+    
+    // Initialize Firestore
+    db = getFirestore(app);
+    
+    // Initialize Analytics (only in browser environment)
+    if (typeof window !== 'undefined') {
+        analytics = getAnalytics(app);
     }
+    
+    console.log('Firebase initialized successfully');
 } catch (error) {
     console.error("Firebase initialization failed:", error);
 }
 
-export { db };
+export { db, analytics };

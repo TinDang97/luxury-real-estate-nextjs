@@ -133,6 +133,7 @@ export default async function ProjectPage({
          return null;
       })}
 
+
       {/* Render top-level components if they weren't in the content array already */}
       {!project.content?.some((b: any) => b._type === 'gallery') && project.gallery?.images?.length > 0 && (
           <Gallery {...project.gallery} />
@@ -140,6 +141,11 @@ export default async function ProjectPage({
       
       {!project.content?.some((b: any) => b._type === 'project3DView') && project.project3DView?.views?.length > 0 && (
           <Project3DView {...project.project3DView} />
+      )}
+      
+      {/* Brochure Registration Section */}
+      {!project.content?.some((b: any) => b._type === 'inlineRegisterForm') && (
+        <InlineRegisterForm projectTitle={project.title} />
       )}
       
       {/* Registration CTA */}

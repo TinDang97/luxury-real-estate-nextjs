@@ -8,45 +8,58 @@ const resend = process.env.RESEND_API_KEY
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, name } = await req.json();
+    const { email, name, phone, projectTitle } = await req.json();
 
-    if (!email) {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 });
+    // Phone is required, email is optional
+    if (!phone) {
+      return NextResponse.json({ error: 'Phone number is required' }, { status: 400 });
     }
 
-    if (!resend) {
-      console.warn('Resend API Key is missing. Email not sent.');
-      // Return success in dev/build to avoid breaking flows, but log warning
-      return NextResponse.json({ 
-        success: true, 
-        message: 'Email simulation: Resend API key missing' 
+    if (!name) {
+      return NextResponse.json({ error: 'Name is required' }, { status: 400 });
+    }
+
+    // If email is provided and Resend is configured, send email
+    if (email && resend) {
+      const { data, error } = await resend.emails.send({
+        from: 'VN Luxury <onboarding@resend.dev>', // Only works for verified domains or test mode
+        to: [email],
+        subject: `Welcome to ${projectTitle || 'The Global City'} | Information Inside`,
+        html: `
+          <div style="font-family: sans-serif; color: #333;">
+            <h1>Hello ${name || 'Valued Guest'},</h1>
+            <p>Thank you for your interest in <strong>${projectTitle || 'The Global City'}</strong>.</p>
+            <p>As the new downtown of Southeast Asia, we offer unparalleled luxury and investment opportunities.</p>
+            <p>
+              <a href="https://masterisehomes.com/the-global-city" style="display:inline-block; background: #c5a059; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Learn More</a>
+            </p>
+            <p>Our sales team will contact you shortly via phone (${phone})${email ? ` or email (${email})` : ''}.</p>
+            <hr />
+            <p style="font-size: 12px; color: #888;">VN Luxury Realty</p>
+          </div>
+        `,
       });
+
+      if (error) {
+        console.warn('Resend email error:', error);
+        // Don't fail the whole request if email fails
+      }
+    } else if (!resend) {
+      console.warn('Resend API Key is missing. Email not sent.');
     }
 
-    const { data, error } = await resend.emails.send({
-      from: 'VN Luxury <onboarding@resend.dev>', // Only works for verified domains or test mode
-      to: [email],
-      subject: 'Welcome to The Global City | Brochure Inside',
-      html: `
-        <div style="font-family: sans-serif; color: #333;">
-          <h1>Hello ${name || 'Valued Guest'},</h1>
-          <p>Thank you for your interest in <strong>The Global City</strong>.</p>
-          <p>As the new downtown of Southeast Asia, we offer unparalleled luxury and investment opportunities.</p>
-          <p>
-            <a href="https://masterisehomes.com/the-global-city" style="display:inline-block; background: #c5a059; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px;">Download Brochure</a>
-          </p>
-          <p>Our sales team will contact you shortly.</p>
-          <hr />
-          <p style="font-size: 12px; color: #888;">VN Luxury Realty</p>
-        </div>
-      `,
+    // Always return success if phone and name are provided
+    return NextResponse.json({ 
+      success: true, 
+      message: 'Registration successful. We will contact you soon.',
+      contactInfo: {
+        name,
+        phone,
+        email: email || null,
+        projectTitle
+      }
     });
 
-    if (error) {
-      return NextResponse.json({ error }, { status: 500 });
-    }
-
-    return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error('Registration API Error:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });

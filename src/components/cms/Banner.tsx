@@ -34,6 +34,7 @@ export default function Banner({ title, content, buttonText, backgroundImage }: 
             src={bgUrl}
             alt={title}
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-[#0c1a2c]/85" />

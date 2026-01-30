@@ -42,6 +42,7 @@ const GalleryItem = ({ image, index, onClick, getImageUrl }: {
           src={getImageUrl(image, 800)}
           alt={image.caption || `Gallery image ${index + 1}`}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"
         />
       </motion.div>
@@ -203,6 +204,7 @@ export default function Gallery({ heading, description, images }: GalleryProps) 
                     src={getImageUrl(validImages[0], 1600)}
                     alt="Project Highlight"
                     fill
+                    sizes="(max-width: 768px) 100vw, 66vw"
                     className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
             </motion.div>
@@ -356,6 +358,7 @@ export default function Gallery({ heading, description, images }: GalleryProps) 
                                 src={getImageUrl(validImages[selectedIndex], 2400)}
                                 alt={validImages[selectedIndex].caption || "Gallery View"}
                                 fill
+                                sizes="100vw"
                                 className="object-contain"
                                 priority
                             />

@@ -54,12 +54,12 @@
     "views": [
       {
         "_key": "view1",
-        "label": "Project View 360",
+        "label": "360° Project View",
         "url": "https://masterisehomes.com/the-global-city/vi/masteri-grand-view/project-view-360/"
       },
       {
         "_key": "view2",
-        "label": "Real Scene 360",
+        "label": "360° Real Scene",
         "url": "https://360batdongsan.com/360-masteri-grand-view/"
       }
     ]
