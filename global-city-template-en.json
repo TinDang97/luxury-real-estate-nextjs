@@ -1,0 +1,279 @@
+{
+  "_type": "project",
+  "language": "en",
+  "title": "The Global City",
+  "slug": {
+    "current": "the-global-city"
+  },
+  "category": "Urban Development",
+  "location": "District 2, Ho Chi Minh City",
+  "developer": "Masterise Homes",
+  "price": "From 36 billion VND (SOHO)",
+  "status": "selling",
+  "overview": "The Global City is Vietnam's first international-standard urban development, designed by Foster + Partners, offering world-class living spaces across 117.4 hectares in the heart of District 2.",
+  "gallery": {
+    "heading": "Architecture Collection",
+    "description": "Admire world-class living spaces through the most authentic perspectives - from modern architecture to luxurious amenities.",
+    "images": [
+      { "_key": "g1", "url": "/assets/images/global-city/masteri-grand-view-main.jpeg", "caption": "First high-rise masterpiece at The Global City" },
+      { "_key": "g2", "url": "/assets/images/global-city/masteri-grand-view-2.jpeg", "caption": "Developed by Masterise Homes" },
+      { "_key": "g3", "url": "/assets/images/global-city/masteri-grand-view-3.jpeg", "caption": "A new lifestyle trend has emerged" },
+      { "_key": "g4", "url": "/assets/images/global-city/masteri-grand-view-4.jpeg", "caption": "Multi-experience lifestyle" },
+      { "_key": "g5", "url": "/assets/images/global-city/masteri-grand-view-5.jpeg", "caption": "All-in-one urban amenities" },
+      { "_key": "g6", "url": "/assets/images/global-city/masteri-grand-view-6.jpeg", "caption": "Synchronized facilities & community" },
+      { "_key": "g7", "url": "/assets/images/global-city/masteri-grand-view-7.jpeg", "caption": "Private living space with personal touch" },
+      { "_key": "g8", "url": "/assets/images/global-city/masteri-grand-view-8.jpeg", "caption": "Complete ecosystem for premium apartments" },
+      { "_key": "g9", "url": "/assets/images/global-city/masteri-grand-view-9.jpeg", "caption": "Diamond location in An Phu, District 2" },
+      { "_key": "g10", "url": "/assets/images/global-city/masteri-grand-view-10.jpeg", "caption": "Synchronized planning 117.4ha" },
+      { "_key": "g11", "url": "/assets/images/global-city/masteri-grand-view-11.jpeg", "caption": "Designed by Foster + Partners" },
+      { "_key": "g12", "url": "/assets/images/global-city/masteri-grand-view-12.jpeg", "caption": "Synchronized and complete infrastructure" },
+      { "_key": "g13", "url": "/assets/images/global-city/masteri-grand-view-13.jpeg", "caption": "Attracting thousands of visitors daily" },
+      { "_key": "g14", "url": "/assets/images/global-city/masteri-grand-view-14.jpeg", "caption": "Trendy lifestyle" },
+      { "_key": "g15", "url": "/assets/images/global-city/masteri-grand-view-15.jpeg", "caption": "Vibrant SOHO commercial area" },
+      { "_key": "g16", "url": "/assets/images/global-city/masteri-grand-view-16.jpeg", "caption": "Existing commercial amenities" },
+      { "_key": "g17", "url": "/assets/images/global-city/masteri-grand-view-17.jpeg", "caption": "Largest Shopping Mall in Southern Vietnam" },
+      { "_key": "g18", "url": "/assets/images/global-city/masteri-grand-view-18.jpeg", "caption": "International-class experience" },
+      { "_key": "g19", "url": "/assets/images/global-city/masteri-grand-view-19.jpeg", "caption": "GenFest - Vietnam's leading scale festival" },
+      { "_key":  "g20", "url": "/assets/images/global-city/masteri-grand-view-20.jpeg", "caption": "New Center - New icon of Southeast Asia" },
+      { "_key": "g21", "url": "/assets/images/global-city/masteri-grand-view-21.jpeg", "caption": "High-rise masterpiece at the New Center" },
+      { "_key": "g22", "url": "/assets/images/global-city/masteri-grand-view-22.jpeg", "caption": "Pioneering new lifestyle" },
+      { "_key": "g23", "url": "/assets/images/global-city/masteri-grand-view-23.jpeg", "caption": "Refined living - Experience - Peace" },
+      { "_key": "g24", "url": "/assets/images/global-city/masteri-grand-view-24.jpeg", "caption": "Live the Masteri way" },
+      { "_key": "g25", "url": "/assets/images/global-city/masteri-grand-view-25.jpeg", "caption": "Diamond location facing the New Center" },
+      { "_key": "g26", "url": "/assets/images/global-city/masteri-grand-view-26.jpeg", "caption": "Traffic hub intersection" },
+      { "_key": "g27", "url": "/assets/images/global-city/masteri-grand-view-27.jpeg", "caption": "Shining high-rise landmark" },
+      { "_key": "g28", "url": "/assets/images/global-city/masteri-grand-view-28.jpeg", "caption": "Spark & Glow overview information" },
+      { "_key": "g29", "url": "/assets/images/global-city/masteri-grand-view-29.jpeg", "caption": "Created by international partners" },
+      { "_key": "g30", "url": "/assets/images/global-city/masteri-grand-view-30.jpeg", "caption": "Urban design by Foster + Partners" }
+    ]
+  },
+  "project3DView": {
+    "title": "360° Virtual Tour",
+    "subtitle": "Explore Masteri Grand View apartments in detail through 360-degree views",
+    "slug": { "current": "masteri-grand-view-360" },
+    "views": [
+      {
+        "_key": "view1",
+        "label": "Project View 360",
+        "url": "https://masterisehomes.com/the-global-city/vi/masteri-grand-view/project-view-360/"
+      },
+      {
+        "_key": "view2",
+        "label": "Real Scene 360",
+        "url": "https://360batdongsan.com/360-masteri-grand-view/"
+      }
+    ]
+  },
+  "content": [
+    {
+      "_type": "hero",
+      "_key": "hero1",
+      "heading": "The Global City",
+      "category": "International-Standard Urban Development",
+      "location": "An Phu, District 2, Thu Duc City",
+      "backgroundImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-f0f0f0f0f0f0f0f0f0f0f0f0-1920x1080-jpg"
+        }
+      }
+    },
+    {
+      "_type": "block",
+      "_key": "intro",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Global City is an international-class mixed-use urban development by Masterise Homes, located at the 'diamond' position in District 2. In collaboration with world-leading partners such as Foster + Partners (UK) and WATG, the project is expected to become 'The New City Center' of Southeast Asia. Spanning 117.4 hectares with low construction density, The Global City aims for a green, sustainable living model that connects the international community."
+        }
+      ]
+    },
+    {
+      "_type": "project3DView",
+      "_key": "3dview_top",
+      "title": "Experience 3D Space",
+      "subtitle": "Step into the world of Masteri Grand View instantly",
+      "views": [
+        {
+          "_key": "v1",
+          "label": "Project Overview",
+          "url": "https://masterisehomes.com/the-global-city/vi/masteri-grand-view/project-view-360/"
+        }
+      ]
+    },
+    {
+      "_type": "infoTable",
+      "_key": "specs_table",
+      "title": "Detailed Specifications",
+      "rows": [
+        { "_key": "r1", "label": "Developer", "value": "Masterise Homes" },
+        { "_key": "r2", "label": "Location", "value": "Masterise Homes Sales Gallery, Do Xuan Hop, An Phu Ward, Thu Duc City" },
+        { "_key": "r3", "label": "Scale", "value": "117.4 Hectares" },
+        { "_key": "r4", "label": "Segment", "value": "Luxury urban development" },
+        { "_key": "r5", "label": "Product Types", "value": "Shophouses (SOHO), Villas, Apartments (Masteri Grand View)" },
+        { "_key": "r6", "label": "Apartment Scale", "value": "25 towers, approximately 8,500 units" },
+        { "_key": "r7", "label": "Design Unit", "value": "Foster + Partners (UK)" },
+        { "_key": "r8", "label": "Construction Density", "value": "23%" },
+        { "_key": "r9", "label": "Ownership", "value": "Freehold (Vietnamese), 50 years (Foreigners)" },
+        { "_key": "r10", "label": "Handover Standard", "value": "Premium finished (Apartments), Shell (Shophouses)" },
+        { "_key": "r11", "label": "Bank Support", "value": "Techcombank, Vietinbank (80% loan, 0% interest for 24 months)" },
+        { "_key": "r12", "label": "Handover Time", "value": "Q4/2026 (Apartments), Handed over (SOHO)" },
+        { "_key": "r13", "label": "Management Fee", "value": "Expected 25,000 VND/m2" },
+        { "_key": "r14", "label": "Status", "value": "On sale" }
+      ]
+    },
+    {
+      "_type": "featureList",
+      "_key": "amenities",
+      "title": "Exclusive Amenities",
+      "subtitle": "International-class amenity ecosystem for luxurious living",
+      "features": [
+        { 
+          "_key": "f1", 
+          "icon": "🌊", 
+          "title": "2km Canal", 
+          "image": { "url": "/assets/images/amenities/canal_2km.png" },
+          "description": "Vietnam's first canal system with Southeast Asia's largest water fountain system, creating a romantic and relaxing atmosphere for residents." 
+        },
+        { 
+          "_key": "f2", 
+          "icon": "🌳", 
+          "title": "13ha Central Park", 
+          "image": { "url": "/assets/images/amenities/park_13ha.png" },
+          "description": "13-hectare central park with landscape design by WATG, providing green spaces and ideal community connection." 
+        },
+        { 
+          "_key": "f3", 
+          "icon": "🛍️", 
+          "title": "Shopping Mall", 
+          "image": { "url": "/assets/images/amenities/mall_125000m2.png" },
+          "description": "125,000m² Grade A mall with international brands, cinemas, entertainment areas, and diverse dining options." 
+        },
+        { 
+          "_key": "f4", 
+          "icon": "🏫", 
+          "title": "International School", 
+          "image": { "url": "/assets/images/amenities/intl_school.png" },
+          "description": "International education system from kindergarten to high school, ensuring residents' children study in a modern environment." 
+        },
+        { 
+          "_key": "f5", 
+          "icon": "🏊", 
+          "title": "27m Infinity Pool", 
+          "image": { "url": "/assets/images/amenities/infinity_pool.png" },
+          "description": "Infinity pool with luxurious design, mini bar, and relaxation space like a 5-star resort, bringing resort experience home." 
+        },
+        { 
+          "_key": "f6", 
+          "icon": "💪", 
+          "title": "Clubhouse & Gym", 
+          "image": { "url": "/assets/images/amenities/clubhouse_gym.png" },
+          "description": "Modern gym, yoga studio, sauna room and spa with top-tier equipment, serving residents' fitness needs." 
+        },
+        { 
+          "_key": "f7", 
+          "icon": "🍽️", 
+          "title": "Premium F&B", 
+          "image": { "url": "/assets/images/amenities/fb_street.png" },
+          "description": "Dining area partnered with Pizza 4P's, Pasteur Street Brewing, Yen Sushi, Shamoji and Mylife Coffee, offering diverse culinary experiences." 
+        },
+        { 
+          "_key": "f8", 
+          "icon": "👶", 
+          "title": "Kids Playground", 
+          "image": { "url": "/assets/images/amenities/kids_playground.png" },
+          "description": "Safe outdoor playground with creative design, children's pool area and relaxation area for parents." 
+        },
+        { 
+          "_key": "f9", 
+          "icon": "🏃", 
+          "title": "City Park", 
+          "image": { "url": "/assets/images/amenities/city_park.png" },
+          "description": "Large-scale recreation and sports park with jogging track, golf practice area, tennis courts and outdoor workout areas." 
+        },
+        { 
+          "_key": "f10", 
+          "icon": "🏥", 
+          "title": "Hospital & Clinic", 
+          "image": { "url": "/assets/images/amenities/hospital.png" },
+          "description": "Expected to have international hospital and specialist clinics, ensuring comprehensive healthcare for residents." 
+        },
+        { 
+          "_key": "f11", 
+          "icon": "🎭", 
+          "title": "Cultural & Entertainment Area", 
+          "image": { "url": "/assets/images/amenities/cultural_center.png" },
+          "description": "Space for events, art performances and community activities, creating a civilized and dynamic living environment." 
+        },
+        { 
+          "_key": "f12", 
+          "icon": "🔒", 
+          "title": "24/7 Security", 
+          "image": { "url": "/assets/images/amenities/security_system.png" },
+          "description": "Multi-layer security system with AI cameras, smart access control and continuous patrol guards, ensuring absolute safety." 
+        }
+      ]
+    },
+    {
+      "_type": "gallery",
+      "_key": "gallery_main",
+      "heading": "Visual Journey",
+      "description": "Where architectural lines meet the art of luxury living.",
+      "images": [
+        { "_key": "i2", "url": "/assets/images/global-city/masteri-grand-view-2.jpeg", "caption": "Developed by Masterise Homes" },
+        { "_key": "i3", "url": "/assets/images/global-city/masteri-grand-view-3.jpeg", "caption": "A new lifestyle trend has emerged" },
+        { "_key": "i4", "url": "/assets/images/global-city/masteri-grand-view-4.jpeg", "caption": "Multi-experience lifestyle" },
+        { "_key": "i5", "url": "/assets/images/global-city/masteri-grand-view-5.jpeg", "caption": "All-in-one urban amenities" },
+        { "_key": "i6", "url": "/assets/images/global-city/masteri-grand-view-6.jpeg", "caption": "Synchronized facilities & community" },
+        { "_key": "i7", "url": "/assets/images/global-city/masteri-grand-view-7.jpeg", "caption": "Private living space" },
+        { "_key": "i8", "url": "/assets/images/global-city/masteri-grand-view-8.jpeg", "caption": "Complete ecosystem" },
+        { "_key": "i9", "url": "/assets/images/global-city/masteri-grand-view-9.jpeg", "caption": "Diamond location in An Phu" },
+        { "_key": "i10", "url": "/assets/images/global-city/masteri-grand-view-10.jpeg", "caption": "Synchronized planning 117.4ha" },
+        { "_key": "i11", "url": "/assets/images/global-city/masteri-grand-view-11.jpeg", "caption": "Designed by Foster + Partners" },
+        { "_key": "i12", "url": "/assets/images/global-city/masteri-grand-view-12.jpeg", "caption": "Synchronized and complete infrastructure" },
+        { "_key": "i13", "url": "/assets/images/global-city/masteri-grand-view-13.jpeg", "caption": "Attracting thousands of visitors" },
+        { "_key": "i14", "url": "/assets/images/global-city/masteri-grand-view-14.jpeg", "caption": "Trendy lifestyle" },
+        { "_key": "i15", "url": "/assets/images/global-city/masteri-grand-view-15.jpeg", "caption": "Vibrant SOHO commercial area" },
+        { "_key": "i16", "url": "/assets/images/global-city/masteri-grand-view-16.jpeg", "caption": "Existing commercial amenities" },
+        { "_key": "i17", "url": "/assets/images/global-city/masteri-grand-view-17.jpeg", "caption": "Largest Shopping Mall in Southern Vietnam" },
+        { "_key": "i18", "url": "/assets/images/global-city/masteri-grand-view-18.jpeg", "caption": "International-class experience" },
+        { "_key": "i19", "url": "/assets/images/global-city/masteri-grand-view-19.jpeg", "caption": "Leading scale festival" },
+        { "_key": "i20", "url": "/assets/images/global-city/masteri-grand-view-20.jpeg", "caption": "New icon of Southeast Asia" },
+        { "_key": "i21", "url": "/assets/images/global-city/masteri-grand-view-21.jpeg", "caption": "High-rise masterpiece at New Center" },
+        { "_key": "i22", "url": "/assets/images/global-city/masteri-grand-view-22.jpeg", "caption": "Pioneering new lifestyle" },
+        { "_key": "i23", "url": "/assets/images/global-city/masteri-grand-view-23.jpeg", "caption": "Refined living - Experience - Peace" },
+        { "_key": "i24", "url": "/assets/images/global-city/masteri-grand-view-24.jpeg", "caption": "Live the Masteri way" },
+        { "_key": "i25", "url": "/assets/images/global-city/masteri-grand-view-25.jpeg", "caption": "Diamond location at New Center" }
+      ]
+    },
+    {
+      "_type": "videoSection",
+      "_key": "video1",
+      "title": "Creation Journey",
+      "subtitle": "Discover the story of the new center in Ho Chi Minh City",
+      "videoUrl": "https://www.youtube.com/watch?v=crWY9rfDMpc"
+    },
+    {
+      "_type": "locationMap",
+      "_key": "location",
+      "title": "Golden Coordinates",
+      "description": "Located at the intersection of Do Xuan Hop and Long Thanh - Dau Giay Expressway, conveniently connecting to Tan Son Nhat Airport, District 1 center and the future Long Thanh International Airport.",
+      "coordinates": { "lat": 10.8004, "lng": 106.7473 }
+    },
+    {
+      "_type": "mortgageCalculator",
+      "_key": "calc1",
+      "title": "Financial Plan",
+      "defaultPrice": 32000000000,
+      "priceOptions": [
+        { "_key": "p1", "label": "1BR+ Apartment (7.5 billion)", "value": 7500000000 },
+        { "_key": "p2", "label": "2BR Apartment (9.2 billion)", "value": 9200000000 },
+        { "_key": "p3", "label": "3BR Apartment (12.5 billion)", "value": 12500000000 },
+        { "_key": "p4", "label": "SOHO Shophouse (36 billion)", "value": 36000000000 },
+        { "_key":  "p5", "label": "SOHO Shophouse - Large (48 billion)", "value": 48000000000 },
+        { "_key": "p6", "label": "SOHO Shophouse - Corner (82 billion)", "value": 82000000000 }
+      ]
+    }
+  ]
+}

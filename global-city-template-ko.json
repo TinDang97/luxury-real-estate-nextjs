@@ -1,0 +1,279 @@
+{
+  "_type": "project",
+  "language": "ko",
+  "title": "The Global City",
+  "slug": {
+    "current": "the-global-city"
+  },
+  "category": "도시 개발",
+  "location": "2군, 호치민시",
+  "developer": "Masterise Homes",
+  "price": "360억 VND부터 (SOHO)",
+  "status": "selling",
+  "overview": "The Global City는 Foster + Partners가 설계한 베트남 최초의 국제 기준 도시 개발 프로젝트로, 2군 중심부 117.4 헥타르에 걸쳐 세계적인 수준의 생활 공간을 제공합니다.",
+  "gallery": {
+    "heading": "건축 컬렉션",
+    "description": "현대적인 건축에서 고급 편의시설까지, 가장 진정성 있는 시각으로 세계적인 수준의 생활 공간을 감상하세요.",
+    "images": [
+      { "_key": "g1", "url": "/assets/images/global-city/masteri-grand-view-main.jpeg", "caption": "The Global City 최초의 초고층 걸작" },
+      { "_key": "g2", "url": "/assets/images/global-city/masteri-grand-view-2.jpeg", "caption": "Masterise Homes가 개발" },
+      { "_key": "g3", "url": "/assets/images/global-city/masteri-grand-view-3.jpeg", "caption": "새로운 라이프스타일 트렌드가 등장했습니다" },
+      { "_key": "g4", "url": "/assets/images/global-city/masteri-grand-view-4.jpeg", "caption": "다양한 경험의 라이프스타일" },
+      { "_key": "g5", "url": "/assets/images/global-city/masteri-grand-view-5.jpeg", "caption": "올인원 도시 편의시설" },
+      { "_key": "g6", "url": "/assets/images/global-city/masteri-grand-view-6.jpeg", "caption": "동기화된 시설 및 커뮤니티" },
+      { "_key": "g7", "url": "/assets/images/global-city/masteri-grand-view-7.jpeg", "caption": "개인적인 터치가 있는 프라이빗 생활 공간" },
+      { "_key": "g8", "url": "/assets/images/global-city/masteri-grand-view-8.jpeg", "caption": "프리미엄 아파트를 위한 완전한 생태계" },
+      { "_key": "g9", "url": "/assets/images/global-city/masteri-grand-view-9.jpeg", "caption": "안푸, 2군의 다이아몬드 입지" },
+      { "_key": "g10", "url": "/assets/images/global-city/masteri-grand-view-10.jpeg", "caption": "117.4ha 동기화 계획" },
+      { "_key": "g11", "url": "/assets/images/global-city/masteri-grand-view-11.jpeg", "caption": "Foster + Partners 설계" },
+      { "_key": "g12", "url": "/assets/images/global-city/masteri-grand-view-12.jpeg", "caption": "동기화되고 완전한 인프라" },
+      { "_key": "g13", "url": "/assets/images/global-city/masteri-grand-view-13.jpeg", "caption": "매일 수천 명의 방문객 유치" },
+      { "_key": "g14", "url": "/assets/images/global-city/masteri-grand-view-14.jpeg", "caption": "트렌디한 라이프스타일" },
+      { "_key": "g15", "url": "/assets/images/global-city/masteri-grand-view-15.jpeg", "caption": "활기찬 SOHO 상업 지역" },
+      { "_key": "g16", "url": "/assets/images/global-city/masteri-grand-view-16.jpeg", "caption": "기존 상업 편의시설" },
+      { "_key": "g17", "url": "/assets/images/global-city/masteri-grand-view-17.jpeg", "caption": "베트남 남부 최대 쇼핑몰" },
+      { "_key": "g18", "url": "/assets/images/global-city/masteri-grand-view-18.jpeg", "caption": "국제적인 수준의 경험" },
+      { "_key": "g19", "url": "/assets/images/global-city/masteri-grand-view-19.jpeg", "caption": "GenFest - 베트남 최고 규모 페스티벌" },
+      { "_key":  "g20", "url": "/assets/images/global-city/masteri-grand-view-20.jpeg", "caption": "뉴센터 - 동남아시아의 새로운 아이콘" },
+      { "_key": "g21", "url": "/assets/images/global-city/masteri-grand-view-21.jpeg", "caption": "뉴센터의 초고층 걸작" },
+      { "_key": "g22", "url": "/assets/images/global-city/masteri-grand-view-22.jpeg", "caption": "새로운 라이프스타일 선도" },
+      { "_key": "g23", "url": "/assets/images/global-city/masteri-grand-view-23.jpeg", "caption": "세련된 생활 - 경험 - 평화" },
+      { "_key": "g24", "url": "/assets/images/global-city/masteri-grand-view-24.jpeg", "caption": "Masteri 방식으로 살기" },
+      { "_key": "g25", "url": "/assets/images/global-city/masteri-grand-view-25.jpeg", "caption": "뉴센터를 바라보는 다이아몬드 입지" },
+      { "_key": "g26", "url": "/assets/images/global-city/masteri-grand-view-26.jpeg", "caption": "교통 허브 교차로" },
+      { "_key": "g27", "url": "/assets/images/global-city/masteri-grand-view-27.jpeg", "caption": "빛나는 초고층 랜드마크" },
+      { "_key": "g28", "url": "/assets/images/global-city/masteri-grand-view-28.jpeg", "caption": "Spark & Glow 개요 정보" },
+      { "_key": "g29", "url": "/assets/images/global-city/masteri-grand-view-29.jpeg", "caption": "국제 파트너가 만든" },
+      { "_key": "g30", "url": "/assets/images/global-city/masteri-grand-view-30.jpeg", "caption": "Foster + Partners의 도시 설계" }
+    ]
+  },
+  "project3DView": {
+    "title": "360° 가상 투어",
+    "subtitle": "360도 뷰를 통해 Masteri Grand View 아파트를 상세히 탐험하세요",
+    "slug": { "current": "masteri-grand-view-360" },
+    "views": [
+      {
+        "_key": "view1",
+        "label": "Project View 360",
+        "url": "https://masterisehomes.com/the-global-city/vi/masteri-grand-view/project-view-360/"
+      },
+      {
+        "_key": "view2",
+        "label": "Real Scene 360",
+        "url": "https://360batdongsan.com/360-masteri-grand-view/"
+      }
+    ]
+  },
+  "content": [
+    {
+      "_type": "hero",
+      "_key": "hero1",
+      "heading": "The Global City",
+      "category": "국제 기준의 도시 개발",
+      "location": "안푸, 2군, 투득시",
+      "backgroundImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-f0f0f0f0f0f0f0f0f0f0f0f0-1920x1080-jpg"
+        }
+      }
+    },
+    {
+      "_type": "block",
+      "_key": "intro",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "The Global City는 Masterise Homes의 국제적 수준의 복합 도시 개발 프로젝트로, 2군의 '다이아몬드' 위치에 자리잡고 있습니다. Foster + Partners(영국) 및 WATG와 같은 세계 최고의 파트너들과 협력하여, 이 프로젝트는 동남아시아의 '뉴 시티 센터'가 될 것으로 기대됩니다. 117.4 헥타르에 걸쳐 낮은 건설 밀도로 조성된 The Global City는 국제 커뮤니티를 연결하는 친환경적이고 지속 가능한 생활 모델을 지향합니다."
+        }
+      ]
+    },
+    {
+      "_type": "project3DView",
+      "_key": "3dview_top",
+      "title": "3D 공간 체험",
+      "subtitle": "Masteri Grand View의 세계로 즉시 들어가보세요",
+      "views": [
+        {
+          "_key": "v1",
+          "label": "프로젝트 개요",
+          "url": "https://masterisehomes.com/the-global-city/vi/masteri-grand-view/project-view-360/"
+        }
+      ]
+    },
+    {
+      "_type": "infoTable",
+      "_key": "specs_table",
+      "title": "상세 사양",
+      "rows": [
+        { "_key": "r1", "label": "개발사", "value": "Masterise Homes" },
+        { "_key": "r2", "label": "위치", "value": "Masterise Homes 영업 갤러리, Do Xuan Hop, An Phu Ward, Thu Duc City" },
+        { "_key": "r3", "label": "규모", "value": "117.4 헥타르" },
+        { "_key": "r4", "label": "세그먼트", "value": "럭셔리 도시 개발" },
+        { "_key": "r5", "label": "제품 유형", "value": "상가주택 (SOHO), 빌라, 아파트 (Masteri Grand View)" },
+        { "_key": "r6", "label": "아파트 규모", "value": "25개 타워, 약 8,500세대" },
+        { "_key": "r7", "label": "설계 회사", "value": "Foster + Partners (영국)" },
+        { "_key": "r8", "label": "건설 밀도", "value": "23%" },
+        { "_key": "r9", "label": "소유권", "value": "영구 소유권 (베트남인), 50년 (외국인)" },
+        { "_key": "r10", "label": "인도 기준", "value": "프리미엄 마감 (아파트), 골조 (상가주택)" },
+        { "_key": "r11", "label": "은행 지원", "value": "Techcombank, Vietinbank (80% 대출, 24개월 0% 이자)" },
+        { "_key": "r12", "label": "인도 시간", "value": "2026년 4분기 (아파트), 인도됨 (SOHO)" },
+        { "_key": "r13", "label": "관리비", "value": "예상 25,000 VND/m2" },
+        { "_key": "r14", "label": "상태", "value": "판매 중" }
+      ]
+    },
+    {
+      "_type": "featureList",
+      "_key": "amenities",
+      "title": "독점 편의시설",
+      "subtitle": "럭셔리한 생활을 위한 국제 기준의 편의시설 생태계",
+      "features": [
+        { 
+          "_key": "f1", 
+          "icon": "🌊", 
+          "title": "2km 운하", 
+          "image": { "url": "/assets/images/amenities/canal_2km.png" },
+          "description": "동남아시아 최대의 분수 시스템을 갖춘 베트남 최초의 운하 시스템으로, 주민들에게 낭만적이고 편안한 분위기를 조성합니다." 
+        },
+        { 
+          "_key": "f2", 
+          "icon": "🌳", 
+          "title": "13ha 중앙 공원", 
+          "image": { "url": "/assets/images/amenities/park_13ha.png" },
+          "description": "WATG가 설계한 13 헥타르의 중앙 공원으로 녹지 공간과 이상적인 커뮤니티 연결을 제공합니다." 
+        },
+        { 
+          "_key": "f3", 
+          "icon": "🛍️", 
+          "title": "쇼핑몰", 
+          "image": { "url": "/assets/images/amenities/mall_125000m2.png" },
+          "description": "국제 브랜드, 영화관, 엔터테인먼트 구역, 다양한 식당이 있는 125,000m² 급 A 쇼핑몰입니다." 
+        },
+        { 
+          "_key": "f4", 
+          "icon": "🏫", 
+          "title": "국제학교", 
+          "image": { "url": "/assets/images/amenities/intl_school.png" },
+          "description": "유치원부터 고등학교까지의 국제 교육 시스템으로, 주민 자녀들이 현대적인 환경에서 공부할 수 있도록 보장합니다." 
+        },
+        { 
+          "_key": "f5", 
+          "icon": "🏊", 
+          "title": "27m 인피니티 풀", 
+          "image": { "url": "/assets/images/amenities/infinity_pool.png" },
+          "description": "고급스러운 디자인, 미니 바, 5성급 리조트와 같은 휴식 공간을 갖춘 인피니티 풀로 집에서 리조트 경험을 제공합니다." 
+        },
+        { 
+          "_key": "f6", 
+          "icon": "💪", 
+          "title": "클럽하우스 & 체육관", 
+          "image": { "url": "/assets/images/amenities/clubhouse_gym.png" },
+          "description": "최고급 장비를 갖춘 현대적인 체육관, 요가 스튜디오, 사우나실 및 스파로 주민들의 피트니스 요구를 충족시킵니다." 
+        },
+        { 
+          "_key": "f7", 
+          "icon": "🍽️", 
+          "title": "프리미엄 F&B", 
+          "image": { "url": "/assets/images/amenities/fb_street.png" },
+          "description": "Pizza 4P's, Pasteur Street Brewing, Yen Sushi, Shamoji 및 Mylife Coffee와 파트너십을 맺은 식음료 구역으로 다양한 요리 경험을 제공합니다." 
+        },
+        { 
+          "_key": "f8", 
+          "icon": "👶", 
+          "title": "어린이 놀이터", 
+          "image": { "url": "/assets/images/amenities/kids_playground.png" },
+          "description": "창의적인 디자인, 어린이 수영장 구역 및 부모를 위한 휴식 공간이 있는 안전한 야외 놀이터입니다." 
+        },
+        { 
+          "_key": "f9", 
+          "icon": "🏃", 
+          "title": "시티 파크", 
+          "image": { "url": "/assets/images/amenities/city_park.png" },
+          "description": "조깅 트랙, 골프 연습장, 테니스 코트 및 야외 운동 구역이 있는 대규모 레크리에이션 및 스포츠 공원입니다." 
+        },
+        { 
+          "_key": "f10", 
+          "icon": "🏥", 
+          "title": "병원 및 클리닉", 
+          "image": { "url": "/assets/images/amenities/hospital.png" },
+          "description": "주민들을 위한 포괄적인 의료 서비스를 보장하는 국제 병원 및 전문 클리닉이 예정되어 있습니다." 
+        },
+        { 
+          "_key": "f11", 
+          "icon": "🎭", 
+          "title": "문화 & 엔터테인먼트 구역", 
+          "image": { "url": "/assets/images/amenities/cultural_center.png" },
+          "description": "이벤트, 공연 및 커뮤니티 활동을 위한 공간으로 문명적이고 역동적인 생활 환경을 조성합니다." 
+        },
+        { 
+          "_key": "f12", 
+          "icon": "🔒", 
+          "title": "24/7 보안", 
+          "image": { "url": "/assets/images/amenities/security_system.png" },
+          "description": "AI 카메라, 스마트 출입 통제 및 지속적인 순찰 경비를 갖춘 다층 보안 시스템으로 절대적인 안전을 보장합니다." 
+        }
+      ]
+    },
+    {
+      "_type": "gallery",
+      "_key": "gallery_main",
+      "heading": "비주얼 여정",
+      "description": "건축 라인이 럭셔리 생활의 예술과 만나는 곳입니다.",
+      "images": [
+        { "_key": "i2", "url": "/assets/images/global-city/masteri-grand-view-2.jpeg", "caption": "Masterise Homes가 개발" },
+        { "_key": "i3", "url": "/assets/images/global-city/masteri-grand-view-3.jpeg", "caption": "새로운 라이프스타일 트렌드가 등장했습니다" },
+        { "_key": "i4", "url": "/assets/images/global-city/masteri-grand-view-4.jpeg", "caption": "다양한 경험의 라이프스타일" },
+        { "_key": "i5", "url": "/assets/images/global-city/masteri-grand-view-5.jpeg", "caption": "올인원 도시 편의시설" },
+        { "_key": "i6", "url": "/assets/images/global-city/masteri-grand-view-6.jpeg", "caption": "동기화된 시설 및 커뮤니티" },
+        { "_key": "i7", "url": "/assets/images/global-city/masteri-grand-view-7.jpeg", "caption": "프라이빗 생활 공간" },
+        { "_key": "i8", "url": "/assets/images/global-city/masteri-grand-view-8.jpeg", "caption": "완전한 생태계" },
+        { "_key": "i9", "url": "/assets/images/global-city/masteri-grand-view-9.jpeg", "caption": "안푸의 다이아몬드 입지" },
+        { "_key": "i10", "url": "/assets/images/global-city/masteri-grand-view-10.jpeg", "caption": "117.4ha 동기화 계획" },
+        { "_key": "i11", "url": "/assets/images/global-city/masteri-grand-view-11.jpeg", "caption": "Foster + Partners 설계" },
+        { "_key": "i12", "url": "/assets/images/global-city/masteri-grand-view-12.jpeg", "caption": "동기화되고 완전한 인프라" },
+        { "_key": "i13", "url": "/assets/images/global-city/masteri-grand-view-13.jpeg", "caption": "수천 명의 방문객 유치" },
+        { "_key": "i14", "url": "/assets/images/global-city/masteri-grand-view-14.jpeg", "caption": "트렌디한 라이프스타일" },
+        { "_key": "i15", "url": "/assets/images/global-city/masteri-grand-view-15.jpeg", "caption": "활기찬 SOHO 상업 지역" },
+        { "_key": "i16", "url": "/assets/images/global-city/masteri-grand-view-16.jpeg", "caption": "기존 상업 편의시설" },
+        { "_key": "i17", "url": "/assets/images/global-city/masteri-grand-view-17.jpeg", "caption": "베트남 남부 최대 쇼핑몰" },
+        { "_key": "i18", "url": "/assets/images/global-city/masteri-grand-view-18.jpeg", "caption": "국제적인 수준의 경험" },
+        { "_key": "i19", "url": "/assets/images/global-city/masteri-grand-view-19.jpeg", "caption": "최고 규모 페스티벌" },
+        { "_key": "i20", "url": "/assets/images/global-city/masteri-grand-view-20.jpeg", "caption": "동남아시아의 새로운 아이콘" },
+        { "_key": "i21", "url": "/assets/images/global-city/masteri-grand-view-21.jpeg", "caption": "뉴센터의 초고층 걸작" },
+        { "_key": "i22", "url": "/assets/images/global-city/masteri-grand-view-22.jpeg", "caption": "새로운 라이프스타일 선도" },
+        { "_key": "i23", "url": "/assets/images/global-city/masteri-grand-view-23.jpeg", "caption": "세련된 생활 - 경험 - 평화" },
+        { "_key": "i24", "url": "/assets/images/global-city/masteri-grand-view-24.jpeg", "caption": "Masteri 방식으로 살기" },
+        { "_key": "i25", "url": "/assets/images/global-city/masteri-grand-view-25.jpeg", "caption": "뉴센터의 다이아몬드 입지" }
+      ]
+    },
+    {
+      "_type": "videoSection",
+      "_key": "video1",
+      "title": "창조의 여정",
+      "subtitle": "호치민시의 새로운 중심지 이야기를 발견하세요",
+      "videoUrl": "https://www.youtube.com/watch?v=crWY9rfDMpc"
+    },
+    {
+      "_type": "locationMap",
+      "_key": "location",
+      "title": "골든 좌표",
+      "description": "Do Xuan Hop과 Long Thanh - Dau Giay 고속도로 교차점에 위치하여 Tan Son Nhat 공항, 1군 중심지 및 미래의 Long Thanh 국제공항과 편리하게 연결됩니다.",
+      "coordinates": { "lat": 10.8004, "lng": 106.7473 }
+    },
+    {
+      "_type": "mortgageCalculator",
+      "_key": "calc1",
+      "title": "재정 계획",
+      "defaultPrice": 32000000000,
+      "priceOptions": [
+        { "_key": "p1", "label": "1BR+ 아파트 (75억)", "value": 7500000000 },
+        { "_key": "p2", "label": "2BR 아파트 (92억)", "value": 9200000000 },
+        { "_key": "p3", "label": "3BR 아파트 (125억)", "value": 12500000000 },
+        { "_key": "p4", "label": "SOHO 상가주택 (360억)", "value": 36000000000 },
+        { "_key":  "p5", "label": "SOHO 상가주택 - 대형 (480억)", "value": 48000000000 },
+        { "_key": "p6", "label": "SOHO 상가주택 - 코너 (820억)", "value": 82000000000 }
+      ]
+    }
+  ]
+}

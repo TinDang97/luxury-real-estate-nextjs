@@ -18,16 +18,22 @@ const client = createClient({
   apiVersion: '2024-03-24',
 });
 
-async function syncProject() {
+async function syncProjectByLanguage(language) {
   try {
-    const templateData = JSON.parse(fs.readFileSync('global-city-template.json', 'utf8'));
+    const templateFile = language === 'vn' ? 'global-city-template.json' : `global-city-template-${language}.json`;
+    const templateData = JSON.parse(fs.readFileSync(templateFile, 'utf8'));
     const slug = templateData.slug.current;
 
-    // Fetch existing project to get image IDs
-    const existingProject = await client.fetch('*[_type == "project" && slug.current == $slug][0]', { slug });
+    // Fetch existing project to get image IDs for this language
+    const existingProject = await client.fetch(
+      '*[_type == "project" && slug.current == $slug && language == $language][0]', 
+      { slug, language }
+    );
 
     if (!existingProject) {
-      console.error('Project not found, cannot sync images safely. Please create manually or provide valid IDs.');
+      console.log(`No existing project found for language "${language}", creating new...`);
+      const result = await client.create(templateData);
+      console.log(`Created new project with ID: ${result._id} for language: ${language}`);
       return;
     }
 
@@ -93,17 +99,29 @@ async function syncProject() {
       return block;
     });
 
-    console.log(`Updating existing project with ID: ${existingProject._id}`);
+    console.log(`Updating existing project with ID: ${existingProject._id} for language: ${language}`);
     
     const updateData = { ...templateData };
     delete updateData._id;
     delete updateData._type; 
 
     await client.patch(existingProject._id).set(updateData).commit();
-    console.log('Sync completed successfully!');
+    console.log(`Sync completed successfully for language: ${language}!`);
   } catch (err) {
-    console.error('Error syncing project:', err.message);
+    console.error(`Error syncing project for language "${language}":`, err.message);
   }
 }
 
-syncProject();
+async function syncAll() {
+  const languages = process.argv[2] ? [process.argv[2]] : ['vn', 'en', 'ko'];
+  
+  console.log(`Syncing languages: ${languages.join(', ')}\n`);
+  
+  for (const lang of languages) {
+    await syncProjectByLanguage(lang);
+  }
+  
+  console.log('\nAll syncs completed!');
+}
+
+syncAll();
