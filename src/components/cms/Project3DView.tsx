@@ -59,7 +59,7 @@ export default function Project3DView({
 
   return (
     <section className="py-24 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-5 relative z-10">
+      <div className="container mx-auto px-5 relative z-10 max-w-none md:max-w-7xl">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
@@ -74,7 +74,7 @@ export default function Project3DView({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-bold text-primary mb-6"
+            className="text-4xl md:text-6xl font-bold text-primary mb-6"
           >
             {displayTitle}
           </motion.h2>
@@ -84,7 +84,7 @@ export default function Project3DView({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-slate-500 text-xl font-light tracking-wide italic"
+              className="text-slate-500 text-lg md:text-xl font-light tracking-wide italic"
             >
               {displaySubtitle}
             </motion.p>
@@ -93,7 +93,7 @@ export default function Project3DView({
 
         {/* Tabs */}
         {views.length > 1 && (
-          <div className="flex justify-center flex-wrap gap-4 mb-10">
+          <div className="flex justify-center flex-wrap gap-2 md:gap-4 mb-10">
             {views.map((view: any, idx: number) => (
               <button
                 key={idx}
@@ -102,7 +102,7 @@ export default function Project3DView({
                     setActiveTab(idx);
                   }
                 }}
-                className={`px-8 py-3 rounded-full text-[12px] font-bold tracking-[0.2em] uppercase transition-all border ${
+                className={`px-5 md:px-8 py-2.5 md:py-3 rounded-full text-[10px] md:text-[12px] font-bold tracking-[0.2em] uppercase transition-all border ${
                   activeTab === idx 
                     ? "bg-primary text-white border-primary shadow-xl" 
                     : "bg-transparent text-primary border-primary/20 hover:border-primary/40"
@@ -115,7 +115,7 @@ export default function Project3DView({
         )}
 
         {/* Iframe Container */}
-        <div className="relative aspect-[21/9] w-full bg-slate-100 rounded-3xl overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border border-slate-200">
+        <div className="relative aspect-video md:aspect-[21/9] w-full bg-slate-100 rounded-2xl md:rounded-3xl overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border border-slate-200">
           
           <AnimatePresence mode="wait">
             {!isActivated ? (
@@ -133,7 +133,7 @@ export default function Project3DView({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </div>
-                <p className="mt-6 text-white font-bold tracking-[0.3em] uppercase text-sm drop-shadow-md">{t("activate")}</p>
+                <p className="mt-6 p-4 text-white font-bold tracking-[0.3em] uppercase text-sm drop-shadow-md">{t("activate")}</p>
               </motion.div>
             ) : (
               <motion.div 

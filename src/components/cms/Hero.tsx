@@ -74,7 +74,7 @@ export default function Hero({ heading, category, location, backgroundImage }: H
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-serif font-bold text-white mb-6 leading-[1.1] drop-shadow-2xl"
+            className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-serif font-bold text-white mb-6 leading-[1.1] drop-shadow-2xl"
           >
             {heading}
           </motion.h1>

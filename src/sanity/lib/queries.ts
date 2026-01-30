@@ -4,6 +4,7 @@ export const projectBySlugQuery = groq`
   *[_type == "project" && slug.current == $slug && (language == $language || (!defined(language) && $language == "vn"))][0] {
     _id,
     title,
+    description,
     category,
     "slug": slug.current,
     mainImage,

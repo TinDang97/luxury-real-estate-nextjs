@@ -1,15 +1,22 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function Hero() {
   const t = useTranslations('Hero');
 
   return (
     <section className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden bg-[#0c1a2c]">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed opacity-40 transition-transform duration-[10s] hover:scale-105"
-        style={{ backgroundImage: "url('/assets/images/hero-bg.jpg')" }}
-      />
+      <div className="absolute inset-0 z-0">
+        <Image 
+          src="/assets/images/hero-bg.jpg" 
+          alt="Luxury Real Estate Background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-40 transition-transform duration-[10s] hover:scale-105"
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-br from-[#0c1a2c]/95 via-[#0c1a2c]/60 to-transparent" />
       
       <div className="container relative z-10 px-5 max-w-6xl pt-32 lg:pt-40">

@@ -59,7 +59,7 @@ export default function RegisterModal({ isOpen, onClose, projectTitle }: Registe
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md bg-white p-8 shadow-2xl rounded-sm border-t-4 border-[#c5a059]"
+            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[94%] max-w-md bg-white p-6 sm:p-8 shadow-2xl rounded-sm border-t-4 border-[#c5a059]"
           >
             {success ? (
               <div className="text-center py-8">

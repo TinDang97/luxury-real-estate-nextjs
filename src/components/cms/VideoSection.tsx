@@ -42,7 +42,7 @@ export default function VideoSection({ title, subtitle, videoUrl }: VideoSection
         />
       </div>
 
-      <div className="container mx-auto px-5 relative z-10">
+      <div className="container mx-auto px-0 sm:px-5 relative z-10 max-w-none sm:max-w-4xl">
         <div className="max-w-4xl mx-auto text-center mb-12">
           {title && (
             <motion.h2 
@@ -72,7 +72,7 @@ export default function VideoSection({ title, subtitle, videoUrl }: VideoSection
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="aspect-video w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 group bg-black"
+          className="aspect-video w-full sm:rounded-2xl overflow-hidden shadow-2xl sm:border border-white/10 group bg-black"
         >
           <iframe
             src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&modestbranding=1`}

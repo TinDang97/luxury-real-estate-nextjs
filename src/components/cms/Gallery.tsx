@@ -150,8 +150,8 @@ export default function Gallery({ heading, description, images }: GalleryProps) 
   const displayDescription = description || t("defaultDescription");
 
   return (
-    <section className="py-24 bg-[#0a0f16]">
-      <div className="max-w-[1800px] mx-auto px-5 md:px-12 xl:px-24">
+    <section className="py-16 md:py-24 bg-[#0a0f16]">
+      <div className="max-w-[1800px] mx-auto px-4 md:px-12 xl:px-24">
         {(displayHeading || displayDescription) && (
           <div className="mb-20">
             <motion.p 
@@ -168,7 +168,7 @@ export default function Gallery({ heading, description, images }: GalleryProps) 
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-6xl font-bold text-white uppercase tracking-tight"
+                        className="text-3xl md:text-6xl font-bold text-white uppercase tracking-tight"
                     >
                         {displayHeading}
                     </motion.h2>
@@ -188,10 +188,10 @@ export default function Gallery({ heading, description, images }: GalleryProps) 
           </div>
         )}
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6">
           {/* Highlight Image - Index 0 */}
           <div 
-            className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl cursor-pointer border border-white/5 shadow-2xl aspect-[4/3] md:aspect-auto min-h-[400px]"
+            className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl cursor-pointer border border-white/5 shadow-2xl aspect-[4/3] md:aspect-auto min-h-[300px] md:min-h-[400px]"
             onClick={() => setSelectedIndex(0)}
           >
             <motion.div 
@@ -209,9 +209,9 @@ export default function Gallery({ heading, description, images }: GalleryProps) 
                 />
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80" />
-            <div className="absolute bottom-12 left-12 right-12">
-                <span className="text-accent text-[10px] font-black uppercase tracking-[0.4em] mb-4 block">Signature Shot</span>
-                <h3 className="text-white text-3xl md:text-4xl font-bold uppercase tracking-tight mb-2">{validImages[0].caption || "Project Overview"}</h3>
+            <div className="absolute bottom-8 left-8 right-8 md:bottom-12 md:left-12 md:right-12">
+                <span className="text-accent text-[9px] md:text-[10px] font-black uppercase tracking-[0.4em] mb-3 md:mb-4 block">Signature Shot</span>
+                <h3 className="text-white text-2xl md:text-4xl font-bold uppercase tracking-tight mb-2">{validImages[0].caption || "Project Overview"}</h3>
                 <div className="h-1 w-20 bg-accent transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
             </div>
             

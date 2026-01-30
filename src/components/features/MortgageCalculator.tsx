@@ -16,7 +16,7 @@ interface MortgageCalculatorProps {
 
 export default function MortgageCalculator({ title, defaultPrice = 5000000000, priceOptions = [] }: MortgageCalculatorProps) {
   const t = useTranslations('MortgageCalculator');
-  const [price, setPrice] = useState(defaultPrice);
+  const [price, setPrice] = useState(defaultPrice || 5000000000);
   const [interest, setInterest] = useState(7.5); // Fixed for Vietnam market estimate
   const [term, setTerm] = useState(20);
   const [monthly, setMonthly] = useState(0);
@@ -88,8 +88,8 @@ export default function MortgageCalculator({ title, defaultPrice = 5000000000, p
               <input
                 type="number"
                 className="w-full bg-slate-50 border-b-2 border-slate-200 rounded-none p-4 text-xl md:text-2xl font-serif focus:border-[#c5a059] focus:outline-none transition-colors"
-                value={price}
-                onChange={(e) => setPrice(Number(e.target.value))}
+                value={price || ''}
+                onChange={(e) => setPrice(Number(e.target.value) || 0)}
               />
               <p className="text-xs md:text-sm text-slate-400 mt-4 font-light tracking-wide">{formatCurrency(price)}</p>
             </div>

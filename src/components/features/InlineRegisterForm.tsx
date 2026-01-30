@@ -54,8 +54,8 @@ export default function InlineRegisterForm({ title, description, projectTitle }:
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Form */}
-          <div className="bg-white border-2 border-[#c5a059]/10 p-10 rounded-2xl shadow-lg">
-            <h2 className="text-3xl font-serif text-slate-900 mb-3">
+          <div className="bg-white border-2 border-[#c5a059]/10 p-6 sm:p-10 rounded-2xl shadow-lg">
+            <h2 className="text-2xl sm:text-3xl font-serif text-slate-900 mb-3">
               {title || t("title")}
             </h2>
             <p className="text-slate-600 mb-8">
@@ -137,8 +137,8 @@ export default function InlineRegisterForm({ title, description, projectTitle }:
           {/* Right: Contact Options */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-serif text-slate-900 mb-4">{t("contactTitle")}</h3>
-              <p className="text-slate-600 mb-6">{t("contactDescription")}</p>
+              <h3 className="text-xl sm:text-2xl font-serif text-slate-900 mb-4">{t("contactTitle")}</h3>
+              <p className="text-sm sm:text-base text-slate-600 mb-6">{t("contactDescription")}</p>
             </div>
 
             <div className="space-y-4">

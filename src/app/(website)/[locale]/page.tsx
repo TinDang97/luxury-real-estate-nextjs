@@ -17,9 +17,9 @@ export default async function Home({
       <Hero />
 
       {/* Featured Projects */}
-      <section id="featured-projects" className="container mx-auto px-5 py-32">
+      <section id="featured-projects" className="container mx-auto px-5 py-32 overflow-hidden">
         <div className="text-center mb-20 relative">
-          <div className="text-[120px] font-black text-slate-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-60 tracking-tighter uppercase whitespace-nowrap">Featured</div>
+          <div className="text-[40px] xs:text-[60px] sm:text-[80px] md:text-[120px] font-black text-slate-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-60 tracking-tighter uppercase whitespace-nowrap">Featured</div>
           <h2 className="text-6xl md:text-7xl font-bold mb-6 tracking-tight">
             {locale === 'vn' ? 'Dựa Án Tiêu Biểu' : locale === 'ko' ? '주요 프로젝트' : 'Featured Projects'}
           </h2>
@@ -61,9 +61,9 @@ export default async function Home({
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-[#f8f9fa] py-32 relative overflow-hidden">
-        <div className="container mx-auto px-5 lg:flex items-center gap-24 relative z-10">
-          <div className="lg:w-1/2 mb-16 lg:mb-0">
+      <section id="about" className="bg-[#f8f9fa] py-20 md:py-32 relative overflow-hidden">
+        <div className="container mx-auto px-5 lg:flex items-center gap-16 xl:gap-24 relative z-10">
+          <div className="lg:w-1/2 mb-12 lg:mb-0">
             <div className="relative">
               <div className="relative aspect-[4/5] overflow-hidden shadow-[40px_40px_0px_#c5a059]">
                 <div 
@@ -74,8 +74,8 @@ export default async function Home({
             </div>
           </div>
           <div className="lg:w-1/2">
-            <p className="text-accent font-black uppercase tracking-[0.4em] text-[14px] mb-8">About Us</p>
-            <h2 className="text-6xl md:text-7xl font-bold mb-10 leading-tight">
+            <p className="text-accent font-black uppercase tracking-[0.4em] text-[12px] sm:text-[14px] mb-4 sm:mb-8">About Us</p>
+            <h2 className="text-4xl md:text-7xl font-bold mb-8 md:mb-10 leading-tight">
               {locale === 'vn' ? 'Chuyên Gia Bất Động Sản Hạng Sang' : locale === 'ko' ? '럭셔리 부동산 전문가' : 'Luxury Real Estate Specialists'}
             </h2>
             <div className="space-y-8 text-slate-500 text-lg font-light leading-relaxed">
@@ -92,7 +92,7 @@ export default async function Home({
                 </div>
               </div>
 
-              <Link href={`/${locale}/#contact`} className="inline-block mt-12 bg-[#0c1a2c] text-white py-5 px-12 font-bold tracking-[0.2em] text-[12px] hover:bg-accent hover:text-white transition-all shadow-2xl">
+              <Link href={`/${locale}/#contact`} className="inline-block mt-8 md:mt-12 bg-[#0c1a2c] text-white py-4 md:py-5 px-10 md:px-12 font-bold tracking-[0.2em] text-[11px] md:text-[12px] hover:bg-accent hover:text-white transition-all shadow-2xl">
                 {locale === 'vn' ? 'LIÊN HỆ TƯ VẤN' : locale === 'ko' ? '컨설팅 문의' : 'SCHEDULE CONSULTATION'}
               </Link>
             </div>

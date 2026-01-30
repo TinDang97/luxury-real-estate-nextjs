@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { PortableText } from "next-sanity";
 import RegisterButton from "@/components/features/RegisterButton";
 import dynamic from "next/dynamic";
+import type { Metadata } from "next";
+import { urlFor } from "@/sanity/lib/image";
 
 const Hero = dynamic(() => import("@/components/cms/Hero"));
 const Gallery = dynamic(() => import("@/components/cms/Gallery"));
@@ -64,6 +66,105 @@ export async function generateStaticParams() {
   return paths;
 }
 
+// SEO: Generate dynamic metadata for each project
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; locale: string }>;
+}): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const project = await client.fetch(projectBySlugQuery, { slug, language: locale });
+
+  if (!project) {
+    return {
+      title: "Project Not Found | VN Luxury Realty",
+      description: "The requested project could not be found.",
+    };
+  }
+
+  // Get project image for social sharing
+  const ogImage = project.content?.find((block: any) => block._type === 'hero')?.backgroundImage
+    || project.mainImage
+    || project.gallery?.images?.[0]
+    || project.content?.find((block: any) => block._type === 'gallery')?.images?.[0];
+
+  const imageUrlForSocial = ogImage
+    ? urlFor(ogImage).width(1200).height(630).url()
+    : undefined;
+
+  // Truncate description to optimal length for meta description (155-160 chars)
+  const description = project.description
+    ? project.description.length > 160
+      ? project.description.substring(0, 157) + "..."
+      : project.description
+    : `Khám phá dự án ${project.title} - Bất động sản cao cấp tại Việt Nam với tiện ích đẳng cấp quốc tế.`;
+
+  // Map locale to Open Graph locale format
+  const ogLocaleMap: Record<string, string> = {
+    vn: "vi_VN",
+    en: "en_US",
+    ko: "ko_KR",
+  };
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3001";
+  const canonicalUrl = `${baseUrl}/${locale}/projects/${slug}`;
+
+  return {
+    title: `${project.title} | VN Luxury Realty`,
+    description,
+    
+    // Open Graph for Facebook, LinkedIn, etc.
+    openGraph: {
+      type: "website",
+      locale: ogLocaleMap[locale] || "vi_VN",
+      url: canonicalUrl,
+      title: `${project.title} | VN Luxury Realty`,
+      description,
+      siteName: "VN Luxury Realty",
+      images: imageUrlForSocial
+        ? [
+            {
+              url: imageUrlForSocial,
+              width: 1200,
+              height: 630,
+              alt: project.title,
+            },
+          ]
+        : [],
+    },
+
+    // Twitter Card
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | VN Luxury Realty`,
+      description,
+      images: imageUrlForSocial ? [imageUrlForSocial] : [],
+    },
+
+    // Canonical URL
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        en: `${baseUrl}/en/projects/${slug}`,
+        vi: `${baseUrl}/vn/projects/${slug}`,
+        ko: `${baseUrl}/ko/projects/${slug}`,
+      },
+    },
+
+    // Additional metadata
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
+}
+
 export default async function ProjectPage({
   params,
 }: {
@@ -77,6 +178,16 @@ export default async function ProjectPage({
     // But for now, let's assume if it's missing, it's 404
     return notFound();
   }
+
+  // Get project image for social sharing (used in JSON-LD)
+  const ogImage = project.content?.find((block: any) => block._type === 'hero')?.backgroundImage
+    || project.mainImage
+    || project.gallery?.images?.[0]
+    || project.content?.find((block: any) => block._type === 'gallery')?.images?.[0];
+
+  const imageUrlForSocial = ogImage
+    ? urlFor(ogImage).width(1200).height(630).url()
+    : undefined;
 
   return (
     <main className="min-h-screen bg-slate-50">
@@ -147,6 +258,35 @@ export default async function ProjectPage({
       {!project.content?.some((b: any) => b._type === 'inlineRegisterForm') && (
         <InlineRegisterForm projectTitle={project.title} />
       )}
+      
+      {/* JSON-LD Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": project.title,
+            "description": project.description || `Dự án bất động sản cao cấp ${project.title} tại ${project.location || 'Việt Nam'}`,
+            ...(imageUrlForSocial && { "image": imageUrlForSocial }),
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "VND",
+              "availability": "https://schema.org/InStock",
+              ...(project.price && { "price": project.price }),
+            },
+            ...(project.location && {
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": project.location,
+                "addressCountry": "VN"
+              }
+            }),
+            "category": project.category || "Real Estate",
+            ...(project.developer && { "brand": { "@type": "Organization", "name": project.developer } }),
+          }),
+        }}
+      />
       
       {/* Registration CTA */}
       <RegisterButton projectTitle={project.title} />
