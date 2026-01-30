@@ -14,6 +14,20 @@ export default defineType({
       name: 'defaultPrice',
       title: 'Default Project Price',
       type: 'number',
+    },
+    {
+      name: 'priceOptions',
+      title: 'Price Options',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {name: 'label', type: 'string', title: 'Label'},
+            {name: 'value', type: 'number', title: 'Value (VND)'},
+          ],
+        },
+      ],
     }
   ],
 })

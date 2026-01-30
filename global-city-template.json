@@ -8,23 +8,75 @@
   "category": "Khu đô thị",
   "location": "Quận 2, TP. Hồ Chí Minh",
   "developer": "Masterise Homes",
-  "price": "Từ 2.5 tỷ - 15 tỷ",
+  "price": "Từ 36 tỷ (SOHO)",
   "status": "selling",
-  "overview": "The Global City là khu đô thị đẳng cấp quốc tế tại Quận 2, TP.HCM với quy mô 117.4ha, mang đến không gian sống hiện đại và đầy đủ tiện ích cho cư dân.",
+  "overview": "The Global City là khu đô thị chuẩn quốc tế đầu tiên tại Việt Nam, được thiết kế bởi Foster + Partners, mang đến không gian sống đẳng cấp với quy mô 117.4ha tại trung tâm Quận 2.",
+  "gallery": {
+    "heading": "Bộ Sưu Tập Kiến Trúc",
+    "description": "Chiêm ngưỡng không gian sống đẳng cấp qua những góc nhìn chân thực nhất - từ kiến trúc hiện đại đến tiện ích sang trọng.",
+    "images": [
+      { "_key": "g1", "url": "/assets/images/global-city/masteri-grand-view-main.jpeg", "caption": "Toàn cảnh Masteri Grand View" },
+      { "_key": "g2", "url": "/assets/images/global-city/masteri-grand-view-2.jpeg", "caption": "Kiến trúc hiện đại" },
+      { "_key": "g3", "url": "/assets/images/global-city/masteri-grand-view-3.jpeg", "caption": "Công viên trung tâm" },
+      { "_key": "g4", "url": "/assets/images/global-city/masteri-grand-view-4.jpeg", "caption": "Phối cảnh block căn hộ" },
+      { "_key": "g5", "url": "/assets/images/global-city/masteri-grand-view-5.jpeg", "caption": "Không gian xanh" },
+      { "_key": "g6", "url": "/assets/images/global-city/masteri-grand-view-6.jpeg", "caption": "Lối đi bộ cây xanh" },
+      { "_key": "g7", "url": "/assets/images/global-city/masteri-grand-view-7.jpeg", "caption": "Khu thể thao ngoài trời" },
+      { "_key": "g8", "url": "/assets/images/global-city/masteri-grand-view-8.jpeg", "caption": "Plaza trung tâm" },
+      { "_key": "g9", "url": "/assets/images/global-city/masteri-grand-view-9.jpeg", "caption": "Cảnh quan ban đêm" },
+      { "_key": "g10", "url": "/assets/images/global-city/masteri-grand-view-10.jpeg", "caption": "Nội thất cao cấp" },
+      { "_key": "g11", "url": "/assets/images/global-city/masteri-grand-view-11.jpeg", "caption": "Phòng khách sang trọng" },
+      { "_key": "g12", "url": "/assets/images/global-city/masteri-grand-view-12.jpeg", "caption": "Bếp hiện đại" },
+      { "_key": "g13", "url": "/assets/images/global-city/masteri-grand-view-13.jpeg", "caption": "Phòng ngủ master" },
+      { "_key": "g14", "url": "/assets/images/global-city/masteri-grand-view-14.jpeg", "caption": "Ban công view sông" },
+      { "_key": "g15", "url": "/assets/images/global-city/masteri-grand-view-15.jpeg", "caption": "Phòng tắm cao cấp" },
+      { "_key": "g16", "url": "/assets/images/global-city/masteri-grand-view-16.jpeg", "caption": "Khu vực làm việc" },
+      { "_key": "g17", "url": "/assets/images/global-city/masteri-grand-view-17.jpeg", "caption": "Căn hộ duplex" },
+      { "_key": "g18", "url": "/assets/images/global-city/masteri-grand-view-18.jpeg", "caption": "Sky Villa" },
+      { "_key": "g19", "url": "/assets/images/global-city/masteri-grand-view-19.jpeg", "caption": "Penthouse" },
+      { "_key": "g20", "url": "/assets/images/global-city/masteri-grand-view-20.jpeg", "caption": "Lobby tòa nhà" },
+      { "_key": "g21", "url": "/assets/images/global-city/masteri-grand-view-21.jpeg", "caption": "Hành lang" },
+      { "_key": "g22", "url": "/assets/images/global-city/masteri-grand-view-22.jpeg", "caption": "Không gian chung" },
+      { "_key": "g23", "url": "/assets/images/global-city/masteri-grand-view-23.jpeg", "caption": "Co-working space" },
+      { "_key": "g24", "url": "/assets/images/global-city/masteri-grand-view-24.jpeg", "caption": "Phòng họp" },
+      { "_key": "g25", "url": "/assets/images/global-city/masteri-grand-view-25.jpeg", "caption": "Thư viện" },
+      { "_key": "g26", "url": "/assets/images/global-city/masteri-grand-view-26.jpeg", "caption": "Phòng gym" },
+      { "_key": "g27", "url": "/assets/images/global-city/masteri-grand-view-27.jpeg", "caption": "Yoga studio" },
+      { "_key": "g28", "url": "/assets/images/global-city/masteri-grand-view-28.jpeg", "caption": "Spa & Sauna" },
+      { "_key": "g29", "url": "/assets/images/global-city/masteri-grand-view-29.jpeg", "caption": "Hồ bơi vô cực" },
+      { "_key": "g30", "url": "/assets/images/global-city/masteri-grand-view-30.jpeg", "caption": "Khu vực bể bơi" }
+    ]
+  },
+  "project3DView": {
+    "title": "Tham Quan Thực Tế 360°",
+    "subtitle": "Khám phá chi tiết căn hộ Masteri Grand View qua góc nhìn 360 độ",
+    "slug": { "current": "masteri-grand-view-360" },
+    "views": [
+      {
+        "_key": "view1",
+        "label": "Project View 360",
+        "url": "https://masterisehomes.com/the-global-city/vi/masteri-grand-view/project-view-360/"
+      },
+      {
+        "_key": "view2",
+        "label": "Real Scene 360",
+        "url": "https://360batdongsan.com/360-masteri-grand-view/"
+      }
+    ]
+  },
   "content": [
     {
       "_type": "hero",
       "_key": "hero1",
-      "title": "The Global City",
-      "subtitle": "Trung tâm mới của Đông Nam Á",
+      "heading": "The Global City",
+      "category": "Khu đô thị chuẩn quốc tế",
+      "location": "An Phú, Quận 2, TP. Thủ Đức",
       "backgroundImage": {
         "_type": "image",
         "asset": {
-          "_ref": "image-[upload-hero-image]"
+          "_ref": "image-f0f0f0f0f0f0f0f0f0f0f0f0-1920x1080-jpg"
         }
-      },
-      "ctaText": "Đăng ký tư vấn",
-      "ctaLink": "#register"
+      }
     },
     {
       "_type": "block",
@@ -33,205 +85,195 @@
       "children": [
         {
           "_type": "span",
-          "text": "The Global City là dự án khu đô thị phức hợp đẳng cấp quốc tế do Masterise Homes phát triển, nằm tại vị trí chiến lược ở Quận 2, TP. Hồ Chí Minh. Với tổng diện tích 117.4 ha, dự án hứa hẹn trở thành trung tâm mới của Đông Nam Á với đầy đủ tiện ích hiện đại."
+          "text": "The Global City là dự án khu đô thị phức hợp đẳng cấp quốc tế do Masterise Homes phát triển, tọa lạc tại vị trí 'kim cương' Quận 2. Với sự hợp tác cùng các đối tác hàng đầu thế giới như Foster + Partners (Anh Quốc) và WATG, dự án được kỳ vọng trở thành 'The New City Center' của Đông Nam Á. Quy mô 117.4 ha với mật độ xây dựng thấp, The Global City hướng đến mô hình sống xanh, bền vững và kết nối cộng đồng quốc tế."
         }
       ]
     },
     {
-      "_type": "infoGrid",
-      "_key": "specs",
-      "title": "Thông tin tổng quan",
-      "gridItems": [
+      "_type": "project3DView",
+      "_key": "3dview_top",
+      "title": "Trải Nghiệm Không Gian 3D",
+      "subtitle": "Bước vào thế giới của Masteri Grand View ngay lập tức",
+      "views": [
         {
-          "_key": "scale",
-          "label": "Quy mô",
-          "value": "117.4 ha"
-        },
-        {
-          "_key": "units",
-          "label": "Số căn hộ",
-          "value": "~ 18,000 căn"
-        },
-        {
-          "_key": "developer",
-          "label": "Chủ đầu tư",
-          "value": "Masterise Homes"
-        },
-        {
-          "_key": "handover",
-          "label": "Bàn giao",
-          "value": "Q4/2024 - Q4/2028"
-        },
-        {
-          "_key": "legal",
-          "label": "Pháp lý",
-          "value": "Sổ hồng lâu dài"
-        },
-        {
-          "_key": "density",
-          "label": "Mật độ xây dựng",
-          "value": "35%"
-        }
-      ]
-    },
-    {
-      "_type": "featureList",
-      "_key": "amenities",
-      "title": "Tiện ích nội khu",
-      "subtitle": "Hơn 100 tiện ích đẳng cấp quốc tế",
-      "features": [
-        {
-          "_key": "f1",
-          "icon": "🏊",
-          "title": "Hồ bơi vô cực",
-          "description": "Hệ thống hồ bơi cao cấp với tầm nhìn panorama"
-        },
-        {
-          "_key": "f2",
-          "icon": "🏋️",
-          "title": "Gym & Yoga",
-          "description": "Phòng gym hiện đại và khu vực yoga ngoài trời"
-        },
-        {
-          "_key": "f3",
-          "icon": "🌳",
-          "title": "Công viên trung tâm",
-          "description": "Công viên rộng 36ha với cảnh quan tự nhiên"
-        },
-        {
-          "_key": "f4",
-          "icon": "🏫",
-          "title": "Trường học quốc tế",
-          "description": "Hệ thống giáo dục từ mầm non đến THPT"
-        },
-        {
-          "_key": "f5",
-          "icon": "🛍️",
-          "title": "Trung tâm thương mại",
-          "description": "Vincom & các thương hiệu cao cấp"
-        },
-        {
-          "_key": "f6",
-          "icon": "🏥",
-          "title": "Bệnh viện quốc tế",
-          "description": "Cơ sở y tế đạt chuẩn quốc tế"
-        }
-      ]
-    },
-    {
-      "_type": "gallery",
-      "_key": "gallery1",
-      "title": "Thư viện hình ảnh",
-      "images": [
-        {
-          "_key": "img1",
-          "asset": {
-            "_ref": "image-[upload-gallery-1]"
-          },
-          "caption": "Phối cảnh tổng thể dự án"
-        },
-        {
-          "_key": "img2",
-          "asset": {
-            "_ref": "image-[upload-gallery-2]"
-          },
-          "caption": "Khu vực công viên trung tâm"
-        },
-        {
-          "_key": "img3",
-          "asset": {
-            "_ref": "image-[upload-gallery-3]"
-          },
-          "caption": "Tiện ích hồ bơi vô cực"
-        }
-      ]
-    },
-    {
-      "_type": "locationMap",
-      "_key": "location",
-      "title": "Vị trí chiến lược",
-      "description": "Tọa lạc tại vị trí đắc địa Quận 2, kết nối dễ dàng với các khu vực trọng điểm.",
-      "coordinates": {
-        "lat": 10.8004,
-        "lng": 106.7473
-      },
-      "nearbyPlaces": [
-        {
-          "_key": "p1",
-          "name": "Sân bay Tân Sơn Nhất",
-          "distance": "15 phút",
-          "icon": "✈️"
-        },
-        {
-          "_key": "p2",
-          "name": "Trung tâm Q1",
-          "distance": "10 phút",
-          "icon": "🏙️"
-        },
-        {
-          "_key": "p3",
-          "name": "Vincity Quận 9",
-          "distance": "5 phút",
-          "icon": "🏘️"
+          "_key": "v1",
+          "label": "Toàn cảnh dự án",
+          "url": "https://masterisehomes.com/the-global-city/vi/masteri-grand-view/project-view-360/"
         }
       ]
     },
     {
       "_type": "infoTable",
-      "_key": "payment",
-      "title": "Chính sách thanh toán",
+      "_key": "specs_table",
+      "title": "Thông số chi tiết",
       "rows": [
-        {
-          "_key": "r1",
-          "label": "Đặt cọc",
-          "value": "50 triệu VNĐ"
+        { "_key": "r1", "label": "Chủ đầu tư", "value": "Masterise Homes" },
+        { "_key": "r2", "label": "Vị trí", "value": "Masterise Homes Sales Gallery, Đỗ Xuân Hợp, Phường An Phú, TP. Thủ Đức" },
+        { "_key": "r3", "label": "Quy mô", "value": "117.4 Hecta" },
+        { "_key": "r4", "label": "Phân khúc", "value": "Khu đô thị hạng sang" },
+        { "_key": "r5", "label": "Loại hình sản phẩm", "value": "Nhà phố (SOHO), Biệt thự, Căn hộ (Masteri Grand View)" },
+        { "_key": "r6", "label": "Quy mô căn hộ", "value": "25 tòa, khoảng 8,500 căn" },
+        { "_key": "r7", "label": "Đơn vị thiết kế", "value": "Foster + Partners (Anh Quốc)" },
+        { "_key": "r8", "label": "Mật độ xây dựng", "value": "23%" },
+        { "_key": "r9", "label": "Pháp lý", "value": "Sở hữu lâu dài (Người VN), 50 năm (Người nước ngoài)" },
+        { "_key": "r10", "label": "Tiêu chuẩn bàn giao", "value": "Hoàn thiện cao cấp (Căn hộ), Bàn giao thô (Nhà phố)" },
+        { "_key": "r11", "label": "Ngân hàng hỗ trợ", "value": "Techcombank, Vietinbank (Vay 80%, Lãi suất 0% trong 24 tháng)" },
+        { "_key": "r12", "label": "Thời gian bàn giao", "value": "Quý 4/2026 (Căn hộ), Đã bàn giao (SOHO)" },
+        { "_key": "r13", "label": "Phí quản lý", "value": "Dự kiến 25.000 VNĐ/m2" },
+        { "_key": "r14", "label": "Tình trạng", "value": "Đang mở bán" }
+      ]
+    },
+    {
+      "_type": "featureList",
+      "_key": "amenities",
+      "title": "Tiện ích đặc quyền",
+      "subtitle": "Hệ sinh thái tiện ích đẳng cấp quốc tế cho cuộc sống thượng lưu",
+      "features": [
+        { 
+          "_key": "f1", 
+          "icon": "🌊", 
+          "title": "Kênh Đào 2km", 
+          "image": { "url": "/assets/images/amenities/canal_2km.png" },
+          "description": "Hệ thống kênh đào đầu tiên tại Việt Nam với hệ thống nhạc nước lớn nhất Đông Nam Á, tạo nên bầu không khí lãng mạn và thư giãn cho cư dân." 
         },
-        {
-          "_key": "r2",
-          "label": "Ký HĐMB",
-          "value": "30% giá trị căn hộ"
+        { 
+          "_key": "f2", 
+          "icon": "🌳", 
+          "title": "Công Viên 13ha", 
+          "image": { "url": "/assets/images/amenities/park_13ha.png" },
+          "description": "Công viên trung tâm rộng 13 ha với thiết kế cảnh quan bởi WATG, mang đến không gian xanh mát và kết nối cộng đồng lý tưởng." 
         },
-        {
-          "_key": "r3",
-          "label": "Trong quá trình xây dựng",
-          "value": "40% theo tiến độ"
+        { 
+          "_key": "f3", 
+          "icon": "🛍️", 
+          "title": "Trung tâm thương mại", 
+          "image": { "url": "/assets/images/amenities/mall_125000m2.png" },
+          "description": "125,000m² Mall hạng A quy mô khổng lồ với các thương hiệu quốc tế, rạp chiếu phim, khu vui chơi giải trí và ẩm thực đa dạng." 
         },
-        {
-          "_key": "r4",
-          "label": "Nhận nhà",
-          "value": "30% còn lại"
+        { 
+          "_key": "f4", 
+          "icon": "🏫", 
+          "title": "Trường Quốc Tế", 
+          "image": { "url": "/assets/images/amenities/intl_school.png" },
+          "description": "Hệ thống giáo dục quốc tế từ mầm non đến trung học phổ thông, đảm bảo con em cư dân được học tập trong môi trường hiện đại." 
+        },
+        { 
+          "_key": "f5", 
+          "icon": "🏊", 
+          "title": "Hồ Bơi Vô Cực 27m", 
+          "image": { "url": "/assets/images/amenities/infinity_pool.png" },
+          "description": "Hồ bơi tràn bờ với thiết kế sang trọng, quầy bar mini và không gian thư giãn như resort 5 sao, mang đến trải nghiệm nghỉ dưỡng tại nhà." 
+        },
+        { 
+          "_key": "f6", 
+          "icon": "💪", 
+          "title": "Clubhouse & Gym", 
+          "image": { "url": "/assets/images/amenities/clubhouse_gym.png" },
+          "description": "Phòng gym hiện đại, yoga studio, phòng xông hơi và spa với trang thiết bị hàng đầu, phục vụ nhu cầu rèn luyện sức khỏe của cư dân." 
+        },
+        { 
+          "_key": "f7", 
+          "icon": "🍽️", 
+          "title": "F&B Cao Cấp", 
+          "image": { "url": "/assets/images/amenities/fb_street.png" },
+          "description": "Khu ẩm thực hợp tác với Pizza 4P's, Pasteur Street Brewing, Yen Sushi, Shamoji và Mylife Coffee, mang đến trải nghiệm ẩm thực đa dạng." 
+        },
+        { 
+          "_key": "f8", 
+          "icon": "👶", 
+          "title": "Khu Vui Chơi Trẻ Em", 
+          "image": { "url": "/assets/images/amenities/kids_playground.png" },
+          "description": "Khu vui chơi ngoài trời an toàn với thiết kế sáng tạo, khu bể bơi trẻ em và khu vực thư giãn dành cho phụ huynh." 
+        },
+        { 
+          "_key": "f9", 
+          "icon": "🏃", 
+          "title": "City Park", 
+          "image": { "url": "/assets/images/amenities/city_park.png" },
+          "description": "Công viên giải trí và thể thao quy mô lớn với đường chạy bộ, sân tập golf, sân tennis và các khu vực tập luyện ngoài trời." 
+        },
+        { 
+          "_key": "f10", 
+          "icon": "🏥", 
+          "title": "Bệnh Viện & Phòng Khám", 
+          "image": { "url": "/assets/images/amenities/hospital.png" },
+          "description": "Dự kiến có bệnh viện quốc tế và các phòng khám chuyên khoa, đảm bảo chăm sóc sức khỏe toàn diện cho cư dân." 
+        },
+        { 
+          "_key": "f11", 
+          "icon": "🎭", 
+          "title": "Khu Văn Hóa - Giải Trí", 
+          "image": { "url": "/assets/images/amenities/cultural_center.png" },
+          "description": "Không gian tổ chức sự kiện, biểu diễn nghệ thuật và các hoạt động cộng đồng, tạo nên môi trường sống văn minh và năng động." 
+        },
+        { 
+          "_key": "f12", 
+          "icon": "🔒", 
+          "title": "An Ninh 24/7", 
+          "image": { "url": "/assets/images/amenities/security_system.png" },
+          "description": "Hệ thống an ninh đa lớp với camera AI, kiểm soát ra vào thông minh và bảo vệ tuần tra xuyên suốt, đảm bảo an toàn tuyệt đối." 
         }
       ]
     },
     {
+      "_type": "gallery",
+      "_key": "gallery_main",
+      "heading": "Hành Trình Thị Giác",
+      "description": "Nơi những đường nét kiến trúc gặp gỡ nghệ thuật sống thượng lưu.",
+      "images": [
+        { "_key": "i2", "url": "/assets/images/global-city/masteri-grand-view-2.jpeg", "caption": "Kiến trúc hiện đại" },
+        { "_key": "i3", "url": "/assets/images/global-city/masteri-grand-view-3.jpeg", "caption": "Công viên trung tâm" },
+        { "_key": "i4", "url": "/assets/images/global-city/masteri-grand-view-4.jpeg", "caption": "Phối cảnh block căn hộ" },
+        { "_key": "i5", "url": "/assets/images/global-city/masteri-grand-view-5.jpeg", "caption": "Không gian xanh" },
+        { "_key": "i6", "url": "/assets/images/global-city/masteri-grand-view-6.jpeg", "caption": "Lối đi bộ cây xanh" },
+        { "_key": "i7", "url": "/assets/images/global-city/masteri-grand-view-7.jpeg", "caption": "Khu thể thao ngoài trời" },
+        { "_key": "i8", "url": "/assets/images/global-city/masteri-grand-view-8.jpeg", "caption": "Plaza trung tâm" },
+        { "_key": "i9", "url": "/assets/images/global-city/masteri-grand-view-9.jpeg", "caption": "Cảnh quan ban đêm" },
+        { "_key": "i10", "url": "/assets/images/global-city/masteri-grand-view-10.jpeg", "caption": "Nội thất cao cấp" },
+        { "_key": "i11", "url": "/assets/images/global-city/masteri-grand-view-11.jpeg", "caption": "Phòng khách sang trọng" },
+        { "_key": "i12", "url": "/assets/images/global-city/masteri-grand-view-12.jpeg", "caption": "Bếp hiện đại" },
+        { "_key": "i13", "url": "/assets/images/global-city/masteri-grand-view-13.jpeg", "caption": "Phòng ngủ master" },
+        { "_key": "i14", "url": "/assets/images/global-city/masteri-grand-view-14.jpeg", "caption": "Ban công view sông" },
+        { "_key": "i15", "url": "/assets/images/global-city/masteri-grand-view-15.jpeg", "caption": "Phòng tắm cao cấp" },
+        { "_key": "i16", "url": "/assets/images/global-city/masteri-grand-view-16.jpeg", "caption": "Khu vực làm việc" },
+        { "_key": "i17", "url": "/assets/images/global-city/masteri-grand-view-17.jpeg", "caption": "Căn hộ duplex" },
+        { "_key": "i18", "url": "/assets/images/global-city/masteri-grand-view-18.jpeg", "caption": "Sky Villa" },
+        { "_key": "i19", "url": "/assets/images/global-city/masteri-grand-view-19.jpeg", "caption": "Penthouse" },
+        { "_key": "i20", "url": "/assets/images/global-city/masteri-grand-view-20.jpeg", "caption": "Lobby tòa nhà" },
+        { "_key": "i21", "url": "/assets/images/global-city/masteri-grand-view-21.jpeg", "caption": "Hành lang" },
+        { "_key": "i22", "url": "/assets/images/global-city/masteri-grand-view-22.jpeg", "caption": "Không gian chung" },
+        { "_key": "i23", "url": "/assets/images/global-city/masteri-grand-view-23.jpeg", "caption": "Co-working space" },
+        { "_key": "i24", "url": "/assets/images/global-city/masteri-grand-view-24.jpeg", "caption": "Phòng họp" },
+        { "_key": "i25", "url": "/assets/images/global-city/masteri-grand-view-25.jpeg", "caption": "Thư viện" }
+      ]
+    },
+    {
+      "_type": "videoSection",
+      "_key": "video1",
+      "title": "Hành Trình Kiến Tạo",
+      "subtitle": "Khám phá câu chuyện của trung tâm mới tại TP. Hồ Chí Minh",
+      "videoUrl": "https://www.youtube.com/watch?v=crWY9rfDMpc"
+    },
+    {
+      "_type": "locationMap",
+      "_key": "location",
+      "title": "Tọa Độ Hoàng Kim",
+      "description": "Nằm ngay nút giao Đỗ Xuân Hợp và Cao tốc Long Thành - Dầu Giây, kết nối thuận tiện đến sân bay Tân Sơn Nhất, trung tâm Quận 1 và sân bay quốc tế Long Thành tương lai.",
+      "coordinates": { "lat": 10.8004, "lng": 106.7473 }
+    },
+    {
       "_type": "mortgageCalculator",
-      "_key": "calculator",
-      "title": "Tính toán vay mua nhà",
-      "maxLoanAmount": 15000000000,
-      "defaultInterestRate": 8.5,
-      "defaultLoanTerm": 20
-    },
-    {
-      "_type": "banner",
-      "_key": "cta-banner",
-      "title": "Đặt chỗ ngay hôm nay",
-      "subtitle": "Nhận ưu đãi đặc biệt lên đến 5%",
-      "ctaText": "Liên hệ ngay",
-      "ctaLink": "#register",
-      "backgroundImage": {
-        "_type": "image",
-        "asset": {
-          "_ref": "image-[upload-cta-bg]"
-        }
-      },
-      "style": "dark"
-    },
-    {
-      "_type": "inlineRegisterForm",
-      "_key": "register",
-      "title": "Đăng ký nhận tư vấn",
-      "subtitle": "Để lại thông tin, chúng tôi sẽ liên hệ trong 24h",
-      "submitText": "Gửi thông tin"
+      "_key": "calc1",
+      "title": "Kế Hoạch Tài Chính",
+      "defaultPrice": 32000000000,
+      "priceOptions": [
+        { "_key": "p1", "label": "Căn hộ 1PN+ (7.5 tỷ)", "value": 7500000000 },
+        { "_key": "p2", "label": "Căn hộ 2PN (9.2 tỷ)", "value": 9200000000 },
+        { "_key": "p3", "label": "Căn hộ 3PN (12.5 tỷ)", "value": 12500000000 },
+        { "_key": "p4", "label": "Nhà phố SOHO (36 tỷ)", "value": 36000000000 },
+        { "_key": "p5", "label": "Nhà phố SOHO - Căn lớn (48 tỷ)", "value": 48000000000 },
+        { "_key": "p6", "label": "Nhà phố SOHO - Góc (82 tỷ)", "value": 82000000000 }
+      ]
     }
   ]
 }

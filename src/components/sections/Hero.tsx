@@ -12,8 +12,8 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-br from-[#0c1a2c]/95 via-[#0c1a2c]/60 to-transparent" />
       
-      <div className="container relative z-10 px-5 max-w-6xl">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-[0.2em] mb-10 leading-tight">
+      <div className="container relative z-10 px-5 max-w-6xl pt-32 lg:pt-40">
+        <h1 className="text-[clamp(2.5rem,8vw,5.5rem)] font-bold uppercase tracking-[0.2em] mb-10 leading-[1.1]">
           {t('title')} <br /> <span className="text-accent">{t('titleAccent')}</span>
         </h1>
         <p className="max-w-3xl mx-auto text-xl md:text-2xl text-white/60 mb-14 tracking-wide font-light leading-relaxed">

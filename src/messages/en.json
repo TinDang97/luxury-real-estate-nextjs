@@ -32,7 +32,10 @@
     "home": "Home",
     "projects": "Projects",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "recentProjects": "Recent Projects",
+    "investors": "Investors",
+    "topInvestors": "List of Investors"
   },
   "Footer": {
     "about": "About Us",
@@ -50,5 +53,21 @@
     "title": "Project Location",
     "defaultAddress": "District 2, Ho Chi Minh City",
     "getDirections": "Get Directions"
+  },
+  "Gallery": {
+    "defaultHeading": "Masterpiece Collection",
+    "defaultDescription": "Admire the prestigious living spaces through the most authentic perspectives.",
+    "fullscreen": "Full Screen",
+    "exitFullscreen": "Exit Full Screen"
+  },
+  "Project3DView": {
+    "defaultTitle": "360° Virtual Tour",
+    "defaultSubtitle": "Experience the vision of luxury from every angle",
+    "activate": "Click to activate 360° view",
+    "initializing": "Initializing Virtual Tour...",
+    "errorTitle": "Could Not Load Tour",
+    "errorDesc": "The external virtual tour is currently unavailable or taking too long to respond.",
+    "directLink": "Try Direct Link",
+    "instruction": "Use your mouse or touch to rotate the view"
   }
 }

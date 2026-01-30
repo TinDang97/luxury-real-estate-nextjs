@@ -9,7 +9,10 @@ import banner from './banner'
 import mortgageCalculator from './mortgageCalculator'
 import inlineRegisterForm from './inlineRegisterForm'
 import locationMap from './locationMap'
+import videoSection from './videoSection'
+
+import project3DView from './project3DView'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [project, hero, gallery, infoTable, featureList, infoGrid, banner, mortgageCalculator, inlineRegisterForm, locationMap],
+  types: [project, hero, gallery, infoTable, featureList, infoGrid, banner, mortgageCalculator, inlineRegisterForm, locationMap, videoSection, project3DView],
 }

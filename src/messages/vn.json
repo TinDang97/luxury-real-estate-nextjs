@@ -32,7 +32,10 @@
     "home": "Trang Chủ",
     "projects": "Dự Án",
     "about": "Giới Thiệu",
-    "contact": "Liên Hệ"
+    "contact": "Liên Hệ",
+    "recentProjects": "Dự án mới nhất",
+    "investors": "Chủ đầu tư",
+    "topInvestors": "Danh sách nhà đầu tư"
   },
   "Footer": {
     "about": "Về Chúng Tôi",
@@ -50,5 +53,21 @@
     "title": "Vị Trí Dự Án",
     "defaultAddress": "Quận 2, TP. Hồ Chí Minh",
     "getDirections": "Chỉ Đường"
+  },
+  "Gallery": {
+    "defaultHeading": "Bộ Sưu Tập Tuyệt Tác",
+    "defaultDescription": "Chiêm ngưỡng không gian sống đẳng cấp qua những góc nhìn chân thực nhất.",
+    "fullscreen": "Toàn Màn Hình",
+    "exitFullscreen": "Thoát Toàn Màn Hình"
+  },
+  "Project3DView": {
+    "defaultTitle": "Tham Quan Thực Tế 360°",
+    "defaultSubtitle": "Khám phá không gian sống đẳng cấp qua góc nhìn 360 độ",
+    "activate": "Nhấn để kích hoạt chế độ xem 360°",
+    "initializing": "Đang khởi tạo chuyến tham quan...",
+    "errorTitle": "Không thể tải chuyến tham quan",
+    "errorDesc": "Chuyến tham quan ảo hiện không khả dụng hoặc phản hồi quá lâu.",
+    "directLink": "Thử liên kết trực tiếp",
+    "instruction": "Sử dụng chuột hoặc cảm ứng để xoay góc nhìn"
   }
 }

@@ -1,22 +1,28 @@
 import { client } from "@/sanity/lib/client";
 import { projectBySlugQuery } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
-import Hero from "@/components/cms/Hero";
-import Gallery from "@/components/cms/Gallery";
-import InfoTable from "@/components/cms/InfoTable";
-import InfoGrid from "@/components/cms/InfoGrid";
-import LocationMap from "@/components/cms/LocationMap";
-import Banner from "@/components/cms/Banner";
-import MortgageCalculator from "@/components/features/MortgageCalculator";
-import InlineRegisterForm from "@/components/features/InlineRegisterForm";
-import FeatureListBlock from "@/components/features/FeatureListBlock";
+// import Hero from "@/components/cms/Hero";
 import { PortableText } from "next-sanity";
 import RegisterButton from "@/components/features/RegisterButton";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("@/components/cms/Hero"));
+const Gallery = dynamic(() => import("@/components/cms/Gallery"));
+const Project3DView = dynamic(() => import("@/components/cms/Project3DView"));
+const LocationMap = dynamic(() => import("@/components/cms/LocationMap"));
+const MortgageCalculator = dynamic(() => import("@/components/features/MortgageCalculator"));
+const InfoTable = dynamic(() => import("@/components/cms/InfoTable"));
+const InfoGrid = dynamic(() => import("@/components/cms/InfoGrid"));
+const Banner = dynamic(() => import("@/components/cms/Banner"));
+const VideoSection = dynamic(() => import("@/components/cms/VideoSection"));
+const InlineRegisterForm = dynamic(() => import("@/components/features/InlineRegisterForm"));
+const FeatureListBlock = dynamic(() => import("@/components/features/FeatureListBlock"));
 
 // Page Builder Map
 const components = {
   hero: Hero,
   gallery: Gallery,
+  project3DView: Project3DView,
 };
 
 // SSG: Generate params for all projects and locales
@@ -111,6 +117,12 @@ export default async function ProjectPage({
          if (block._type === 'locationMap') {
              return <LocationMap key={block._key || index} projectName={project.title} {...block} />;
          }
+         if (block._type === 'videoSection') {
+             return <VideoSection key={block._key || index} {...block} />;
+         }
+         if (block._type === 'project3DView') {
+             return <Project3DView key={block._key || index} {...block} />;
+         }
          if (block._type === 'block') {
              return (
                  <section key={block._key || index} className="py-12 px-4 max-w-4xl mx-auto prose prose-lg prose-slate">
@@ -120,6 +132,15 @@ export default async function ProjectPage({
          }
          return null;
       })}
+
+      {/* Render top-level components if they weren't in the content array already */}
+      {!project.content?.some((b: any) => b._type === 'gallery') && project.gallery?.images?.length > 0 && (
+          <Gallery {...project.gallery} />
+      )}
+      
+      {!project.content?.some((b: any) => b._type === 'project3DView') && project.project3DView?.views?.length > 0 && (
+          <Project3DView {...project.project3DView} />
+      )}
       
       {/* Registration CTA */}
       <RegisterButton projectTitle={project.title} />

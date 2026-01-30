@@ -81,6 +81,16 @@ export default defineType({
       }
     }),
     defineField({
+      name: 'gallery',
+      title: 'Default Gallery',
+      type: 'gallery',
+    }),
+    defineField({
+      name: 'project3DView',
+      title: 'Default 3D View',
+      type: 'project3DView',
+    }),
+    defineField({
       name: 'content',
       title: 'Content',
       type: 'array',
@@ -96,6 +106,8 @@ export default defineType({
         {type: 'mortgageCalculator'},
         {type: 'inlineRegisterForm'},
         {type: 'locationMap'},
+        {type: 'videoSection'},
+        {type: 'project3DView'},
       ],
     }),
   ],

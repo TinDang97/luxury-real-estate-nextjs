@@ -55,21 +55,24 @@ export default function MortgageCalculator({ title, defaultPrice = 5000000000, p
                 <label className="block text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">
                   {t('selectUnitType')}
                 </label>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {priceOptions.map((opt, idx) => (
                     <button
                       key={idx}
                       onClick={() => setPrice(opt.value)}
-                      className={`p-4 text-left border rounded-xl transition-all duration-300 ${
+                      className={`p-5 text-left border-2 rounded-2xl transition-all duration-300 relative group ${
                         price === opt.value 
-                          ? 'border-[#c5a059] bg-[#c5a059]/5 shadow-md transform scale-[1.02]' 
-                          : 'border-slate-200 hover:border-[#c5a059]/50 hover:bg-slate-50'
+                          ? 'border-[#c5a059] bg-[#c5a059]/5 shadow-lg transform scale-[1.03] z-10' 
+                          : 'border-slate-100 bg-white hover:border-[#c5a059]/30 hover:bg-slate-50'
                       }`}
                     >
-                      <div className={`text-xs md:text-sm font-bold mb-1 ${price === opt.value ? 'text-[#c5a059]' : 'text-slate-700'}`}>
+                      {price === opt.value && (
+                        <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-[#c5a059] animate-pulse" />
+                      )}
+                      <div className={`text-sm md:text-base font-bold mb-1 transition-colors ${price === opt.value ? 'text-[#c5a059]' : 'text-slate-800'}`}>
                         {opt.label.split('(')[0].trim()}
                       </div>
-                      <div className="text-xs text-slate-500 font-light">
+                      <div className="text-xs md:text-sm text-slate-500 font-medium">
                         {formatCurrency(opt.value)}
                       </div>
                     </button>

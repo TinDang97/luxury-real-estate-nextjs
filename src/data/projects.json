@@ -10,14 +10,14 @@
       "lat": 10.7994,
       "lng": 106.7621
     },
-    "price": "Từ 36 tỷ (SOHO)",
+    "price": "Từ 7.5 tỷ (Masteri Grand View)",
     "priceOptions": [
-      { "label": "Căn hộ 1PN (5 tỷ)", "value": 5000000000 },
-      { "label": "Căn hộ 2PN (7.5 tỷ)", "value": 7500000000 },
-      { "label": "Căn hộ 3PN (9.5 tỷ)", "value": 9500000000 },
-      { "label": "Nhà phố SOHO - Giá gốc (36 tỷ)", "value": 36000000000 },
-      { "label": "Nhà phố SOHO - Căn lớn (43 tỷ)", "value": 43000000000 },
-      { "label": "Nhà phố SOHO - Góc (80 tỷ)", "value": 80000000000 }
+      { "label": "Căn hộ 1PN+ (7.5 tỷ)", "value": 7500000000 },
+      { "label": "Căn hộ 2PN (9.2 tỷ)", "value": 9200000000 },
+      { "label": "Căn hộ 3PN (12.5 tỷ)", "value": 12500000000 },
+      { "label": "Nhà phố SOHO (36 tỷ)", "value": 36000000000 },
+      { "label": "Nhà phố SOHO - Căn lớn (48 tỷ)", "value": 48000000000 },
+      { "label": "Nhà phố SOHO - Góc (82 tỷ)", "value": 82000000000 }
     ],
     "paymentSchemes": [
       {

@@ -12,11 +12,24 @@ export const projectBySlugQuery = groq`
     developer,
     price,
     status,
+    gallery {
+      heading,
+      description,
+      images
+    },
+    project3DView {
+      title,
+      subtitle,
+      slug,
+      views
+    },
     content[] {
       ...,
       _type == "hero" => {
         heading,
         tagline,
+        category,
+        location,
         backgroundImage
       },
       _type == "gallery" => {
@@ -44,7 +57,8 @@ export const projectBySlugQuery = groq`
       },
       _type == "mortgageCalculator" => {
         title,
-        defaultPrice
+        defaultPrice,
+        priceOptions
       },
       _type == "inlineRegisterForm" => {
         title,
@@ -54,6 +68,11 @@ export const projectBySlugQuery = groq`
         address,
         latitude,
         longitude
+      },
+      _type == "project3DView" => {
+        title,
+        subtitle,
+        views
       }
     }
   }
@@ -63,10 +82,22 @@ export const projectsQuery = groq`
   *[_type == "project" && (language == $language || (!defined(language) && $language == "vn"))] {
     _id,
     title,
+    category,
     "slug": slug.current,
     mainImage,
     location,
     price,
     status
+  }
+`;
+
+export const recentProjectsQuery = groq`
+  *[_type == "project" && (language == $language || (!defined(language) && $language == "vn"))] | order(_createdAt desc) [0...5] {
+    _id,
+    title,
+    category,
+    "slug": slug.current,
+    mainImage,
+    location
   }
 `;

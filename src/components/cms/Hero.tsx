@@ -2,7 +2,8 @@
 
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 interface HeroProps {
   heading: string;
@@ -12,6 +13,17 @@ interface HeroProps {
 }
 
 export default function Hero({ heading, category, location, backgroundImage }: HeroProps) {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
   // Helper to get image URL
   const getImageUrl = (img: any) => {
     if (!img) return null;
@@ -27,23 +39,26 @@ export default function Hero({ heading, category, location, backgroundImage }: H
   const bgUrl = getImageUrl(backgroundImage);
 
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden">
+    <section ref={containerRef} className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
         {bgUrl && (
           <Image
             src={bgUrl}
             alt={heading}
             fill
-            className="object-cover transition-transform duration-[20s] hover:scale-110"
+            className="object-cover"
             priority
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-      </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent" />
+      </motion.div>
 
       {/* Content */}
-      <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 xl:p-20 z-10">
+      <motion.div 
+        style={{ y: textY, opacity }}
+        className="absolute bottom-0 left-0 w-full p-6 md:p-12 xl:p-20 z-10"
+      >
         <div className="max-w-[1800px] mx-auto">
           {category && (
             <motion.span 
@@ -74,7 +89,7 @@ export default function Hero({ heading, category, location, backgroundImage }: H
             </motion.p>
           )}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

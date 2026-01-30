@@ -41,14 +41,19 @@ export default async function LocaleLayout({
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
+
+  // Fetch recent projects for the header dropdown
+  const { client } = await import('@/sanity/lib/client');
+  const { recentProjectsQuery } = await import('@/sanity/lib/queries');
+  const recentProjects = await client.fetch(recentProjectsQuery, { language: locale });
  
   return (
-    <html lang={locale} className={`${montserrat.variable} scroll-smooth`}>
+    <html lang={locale} className={`${montserrat.variable} scroll-smooth`} suppressHydrationWarning>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
           <ProgressBar />
           <ScrollReveal />
-          <Header />
+          <Header recentProjects={recentProjects} />
             <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>
