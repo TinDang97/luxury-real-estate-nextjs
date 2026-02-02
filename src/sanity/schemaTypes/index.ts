@@ -12,7 +12,8 @@ import locationMap from './locationMap'
 import videoSection from './videoSection'
 
 import project3DView from './project3DView'
+import investor from './investor'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [project, hero, gallery, infoTable, featureList, infoGrid, banner, mortgageCalculator, inlineRegisterForm, locationMap, videoSection, project3DView],
+  types: [project, hero, gallery, infoTable, featureList, infoGrid, banner, mortgageCalculator, inlineRegisterForm, locationMap, videoSection, project3DView, investor],
 }

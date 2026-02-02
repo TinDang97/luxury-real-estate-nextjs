@@ -105,5 +105,25 @@
     "modalSuccessMessage": "{project}에 대한 관심을 받았습니다. 저희 팀이 24시간 이내에 전화{email}로 연락드리겠습니다.",
     "modalSuccessClose": "닫기",
     "orEmail": " 또는 이메일"
+  },
+  "InvestorsPage": {
+    "title": "세계적인 투자자",
+    "subtitle": "가장 권위 있는 부동산 개발업체와 협력하여 전례 없는 럭셔리 생활 경험을 선사합니다.",
+    "partnersTitle": "우리의 파트너",
+    "viewProfile": "프로필 보기"
+  },
+  "InvestorDetailPage": {
+    "notFound": "투자자를 찾을 수 없습니다",
+    "mission": "우리의 사명",
+    "milestones": "주요 이정표",
+    "legacyTitle": "탁월함의 유산",
+    "portfolio": "포트폴리오",
+    "iconicDevelopments": "상징적인 개발 프로젝트",
+    "inquireNow": "지금 문의하기",
+    "ctaHeading": "투자 준비가 되셨나요?",
+    "ctaDesc": "저희 시니어 컨설턴트가 가장 권위 있는 개발 프로젝트에 대한 독점적인 통찰력과 조기 액세스 기회를 제공해 드립니다.",
+    "yearsExcellence": "국제적인 탁월함과 지역 사회 발전의 역사.",
+    "inspirationTitle": "영감을 주는 건축, 영속하는 경험.",
+    "discoverExcellence": "탁월함의 발견"
   }
 }

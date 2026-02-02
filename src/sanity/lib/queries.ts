@@ -102,3 +102,39 @@ export const recentProjectsQuery = groq`
     location
   }
 `;
+
+export const investorsQuery = groq`
+  *[_type == "investor" && (language == $language || (!defined(language) && $language == "vn"))] {
+    _id,
+    name,
+    "slug": slug.current,
+    logo,
+    coverImage,
+    vision,
+    language
+  }
+`;
+
+export const investorBySlugQuery = groq`
+  *[_type == "investor" && slug.current == $slug && (language == $language || (!defined(language) && $language == "vn"))][0] {
+    _id,
+    name,
+    "slug": slug.current,
+    logo,
+    coverImage,
+    vision,
+    mission,
+    about,
+    achievements,
+    awards,
+    featuredProjects[]-> {
+      _id,
+      title,
+      "slug": slug.current,
+      mainImage,
+      location,
+      price,
+      status
+    }
+  }
+`;

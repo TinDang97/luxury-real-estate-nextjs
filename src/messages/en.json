@@ -105,5 +105,25 @@
     "modalSuccessMessage": "We have received your interest in {project}. Our team will contact you within 24 hours via phone{email}.",
     "modalSuccessClose": "Close",
     "orEmail": " or email"
+  },
+  "InvestorsPage": {
+    "title": "World Class Investors",
+    "subtitle": "Collaborating with the most prestigious real estate developers to bring you unprecedented luxury living experiences.",
+    "partnersTitle": "Our Partners",
+    "viewProfile": "View Profile"
+  },
+  "InvestorDetailPage": {
+    "notFound": "Investor not found",
+    "mission": "Our Mission",
+    "milestones": "Milestones",
+    "legacyTitle": "Legacy of Excellence",
+    "portfolio": "Portfolio",
+    "iconicDevelopments": "Iconic Developments",
+    "inquireNow": "INQUIRE NOW",
+    "ctaHeading": "Ready to Invest with",
+    "ctaDesc": "Allow our senior consultants to provide you with exclusive insights and early-access opportunities to the most prestigious developments.",
+    "yearsExcellence": "Years of international excellence and community development.",
+    "inspirationTitle": "Architecture that inspires, Experiences that endure.",
+    "discoverExcellence": "Discover Excellence"
   }
 }

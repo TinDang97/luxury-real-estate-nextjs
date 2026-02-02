@@ -31,7 +31,6 @@ export default function Header({ recentProjects = [] }: { recentProjects?: Proje
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  // Lock scroll when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -39,14 +38,6 @@ export default function Header({ recentProjects = [] }: { recentProjects?: Proje
       document.body.style.overflow = 'unset';
     }
   }, [mobileMenuOpen]);
-
-  const investors = [
-    { name: 'Masterise Homes', role: 'Chủ đầu tư chính' },
-    { name: 'Foster + Partners', role: 'Thiết kế kiến trúc' },
-    { name: 'Central Cons', role: 'Tổng thầu xây dựng' },
-    { name: 'SDI Corp', role: 'Đối tác phát triển' },
-    { name: 'Quimera Energy', role: 'Giải pháp bền vững' },
-  ];
 
   const locales = [
     { code: 'vn', label: 'VN', flag: '🇻🇳' },
@@ -126,9 +117,9 @@ export default function Header({ recentProjects = [] }: { recentProjects?: Proje
 
             {/* Investors Dropdown */}
             <div className="relative group" onMouseEnter={() => setInvestorsOpen(true)} onMouseLeave={() => setInvestorsOpen(false)}>
-              <button className="text-[13px] font-bold text-white uppercase tracking-[0.2em] hover:text-accent transition-all flex items-center gap-1">
+              <Link href={`/${locale}/investors`} className="text-[13px] font-bold text-white uppercase tracking-[0.2em] hover:text-accent transition-all flex items-center gap-1">
                 {t('investors') || 'Chủ đầu tư'} <span className="text-[10px]">▼</span>
-              </button>
+              </Link>
               <AnimatePresence>
                 {investorsOpen && (
                   <motion.div
@@ -139,12 +130,24 @@ export default function Header({ recentProjects = [] }: { recentProjects?: Proje
                   >
                     <p className="text-[11px] font-bold text-accent uppercase tracking-widest mb-3">{t('topInvestors') || 'Danh sách nhà đầu tư'}</p>
                     <div className="flex flex-col gap-2">
-                      {investors.map((investor, idx) => (
-                        <div key={idx} className="p-2 hover:bg-white/5 rounded-lg transition-colors cursor-default group/inv">
+                      {[
+                        { name: 'Masterise Homes', slug: 'masterise-homes' },
+                        { name: 'Vinhomes', slug: 'vinhomes' },
+                        { name: 'CapitaLand', slug: 'capitaland' },
+                        { name: 'Sun Group', slug: 'sun-group' }
+                      ].map((investor, idx) => (
+                        <Link 
+                          key={idx} 
+                          href={`/${locale}/investors/${investor.slug}`}
+                          className="p-2 hover:bg-white/5 rounded-lg transition-colors group/inv block"
+                        >
                           <h4 className="text-[12px] font-bold text-white group-hover/inv:text-accent transition-colors">{investor.name}</h4>
-                          <p className="text-[10px] text-white/40">{investor.role}</p>
-                        </div>
+                          <p className="text-[10px] text-white/40">Premium Developer</p>
+                        </Link>
                       ))}
+                      <Link href={`/${locale}/investors`} className="text-[10px] font-bold text-accent text-center mt-2 hover:underline">
+                        View All Partners →
+                      </Link>
                     </div>
                   </motion.div>
                 )}

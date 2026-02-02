@@ -1,8 +1,9 @@
 import Hero from "@/components/sections/Hero";
 import Link from "next/link";
 import { client } from '@/sanity/lib/client';
-import { projectsQuery } from '@/sanity/lib/queries';
+import { projectsQuery, investorsQuery } from '@/sanity/lib/queries';
 import { urlFor } from '@/sanity/lib/image';
+import Image from 'next/image';
 
 export default async function Home({
   params
@@ -11,6 +12,7 @@ export default async function Home({
 }) {
   const { locale } = await params;
   const projects = await client.fetch(projectsQuery, { language: locale });
+  const investors = await client.fetch(investorsQuery, { language: locale });
 
   return (
     <div className="flex flex-col">
@@ -97,6 +99,44 @@ export default async function Home({
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Partners/Investors Section */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-5">
+           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+              <div className="max-w-2xl">
+                <p className="text-accent font-black uppercase tracking-[0.4em] text-[12px] mb-4">Strategic Partners</p>
+                <h2 className="text-5xl md:text-6xl font-bold tracking-tight">World Class <br/>Real Estate Investors</h2>
+              </div>
+              <Link href={`/${locale}/investors`} className="text-[12px] font-bold uppercase tracking-[0.3em] text-slate-400 hover:text-accent transition-colors pb-2 border-b border-slate-200 hover:border-accent">
+                View All Partners →
+              </Link>
+           </div>
+
+           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+              {investors?.slice(0, 4).map((investor: any) => (
+                <Link 
+                  key={investor._id} 
+                  href={`/${locale}/investors/${investor.slug}`}
+                  className="group p-10 bg-slate-50 border border-slate-100 flex flex-col items-center justify-center text-center transition-all duration-500 hover:bg-white hover:shadow-2xl hover:border-accent/10"
+                >
+                  {investor.logo && (
+                    <div className="mb-6 h-12 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all">
+                       <Image 
+                         src={urlFor(investor.logo).url()} 
+                         alt={investor.name}
+                         width={120}
+                         height={60}
+                         className="h-full w-auto object-contain"
+                       />
+                    </div>
+                  )}
+                  <h4 className="font-bold text-slate-800 group-hover:text-accent transition-colors">{investor.name}</h4>
+                </Link>
+              ))}
+           </div>
         </div>
       </section>
     </div>

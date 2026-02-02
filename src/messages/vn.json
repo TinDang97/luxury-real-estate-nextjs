@@ -105,5 +105,25 @@
     "modalSuccessMessage": "Chúng tôi đã nhận được yêu cầu của bạn về {project}. Đội ngũ chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ qua điện thoại{email}.",
     "modalSuccessClose": "Đóng",
     "orEmail": " hoặc email"
+  },
+  "InvestorsPage": {
+    "title": "Chủ Đầu Tư Quốc Tế",
+    "subtitle": "Hợp tác cùng những nhà phát triển bất động sản uy tín nhất để mang đến cho bạn trải nghiệm sống sang trọng chưa từng có.",
+    "partnersTitle": "Đối Tác Của Chúng Tôi",
+    "viewProfile": "Xem Hồ Sơ"
+  },
+  "InvestorDetailPage": {
+    "notFound": "Không tìm thấy chủ đầu tư",
+    "mission": "Sứ Mệnh",
+    "milestones": "Cột Mốc Quan Trọng",
+    "legacyTitle": "Di Sản Của Sự Xuất Sắc",
+    "portfolio": "Danh Mục Dự Án",
+    "iconicDevelopments": "Công Trình Biểu Tượng",
+    "inquireNow": "NHẬN TƯ VẤN NGAY",
+    "ctaHeading": "Sẵn sàng đầu tư cùng",
+    "ctaDesc": "Hãy để các chuyên gia tư vấn cao cấp của chúng tôi cung cấp cho bạn những thông tin độc quyền và cơ hội tiếp cận sớm những dự án danh giá nhất.",
+    "yearsExcellence": "Năm kinh nghiệm quốc tế và phát triển cộng đồng thịnh vượng.",
+    "inspirationTitle": "Kiến trúc truyền cảm hứng, Trải nghiệm bền vững.",
+    "discoverExcellence": "Khám Phá Sự Hoàn Hảo"
   }
 }
