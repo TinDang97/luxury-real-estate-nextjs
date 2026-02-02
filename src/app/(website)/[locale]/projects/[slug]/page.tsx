@@ -7,6 +7,7 @@ import RegisterButton from "@/components/features/RegisterButton";
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { urlFor } from "@/sanity/lib/image";
+import { getTranslations } from "next-intl/server";
 
 const Hero = dynamic(() => import("@/components/cms/Hero"));
 const Gallery = dynamic(() => import("@/components/cms/Gallery"));
@@ -171,6 +172,7 @@ export default async function ProjectPage({
   params: Promise<{ slug: string; locale: string }>;
 }) {
   const { slug, locale } = await params;
+  const t = await getTranslations('Footer');
   const project = await client.fetch(projectBySlugQuery, { slug, language: locale });
 
   if (!project) {
@@ -288,6 +290,16 @@ export default async function ProjectPage({
         }}
       />
       
+      {/* Booking Policy Section */}
+      <section className="py-12 px-4 bg-white border-t border-slate-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-xl font-serif text-slate-900 mb-4">{t('Footer.bookingPolicy')}</h3>
+          <p className="text-lg text-[#c5a059] font-bold tracking-wide uppercase italic">
+            {t('Footer.bookingPolicyText')}
+          </p>
+        </div>
+      </section>
+
       {/* Registration CTA */}
       <RegisterButton projectTitle={project.title} />
     </main>

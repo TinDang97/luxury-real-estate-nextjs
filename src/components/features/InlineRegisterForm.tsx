@@ -144,7 +144,7 @@ export default function InlineRegisterForm({ title, description, projectTitle }:
             <div className="space-y-4">
               {/* Zalo */}
               <a
-                href="https://zalo.me/0901234567"
+                href="https://zalo.me/0906113111"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-5 bg-white border-2 border-slate-200 rounded-xl hover:border-[#0180C7] hover:shadow-lg transition-all group"
@@ -156,16 +156,37 @@ export default function InlineRegisterForm({ title, description, projectTitle }:
                 </div>
                 <div className="flex-1">
                   <p className="font-semibold text-slate-900 mb-1">{t("zaloTitle")}</p>
-                  <p className="text-sm text-slate-600">{t("zaloDescription")}</p>
+                  <p className="text-sm text-slate-600">0906 113 111</p>
                 </div>
                 <svg className="w-5 h-5 text-slate-400 group-hover:text-[#0180C7] group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
 
+              {/* KakaoTalk */}
+              <a
+                href="https://qr.kakao.com/talk/p/0932120293"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-5 bg-white border-2 border-slate-200 rounded-xl hover:border-[#FEE500] hover:shadow-lg transition-all group"
+              >
+                <div className="w-14 h-14 rounded-full bg-[#FEE500] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8 text-[#3A1D1D]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.557 1.707 4.8 4.33 6.108l-.873 3.195c-.095.35.31.62.58.44l3.76-2.486c.068.006.136.008.203.008 4.97 0 9-3.185 9-7.115S16.97 3 12 3z"/>
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <p className="font-semibold text-slate-900 mb-1">{t("kakaoTitle")}</p>
+                  <p className="text-sm text-slate-600">0932 120 293</p>
+                </div>
+                <svg className="w-5 h-5 text-slate-400 group-hover:text-[#FEE500] group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/masterisehomes"
+                href="https://www.facebook.com/profile.php?id=61570954898524"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-5 bg-white border-2 border-slate-200 rounded-xl hover:border-[#1877F2] hover:shadow-lg transition-all group"
@@ -186,7 +207,7 @@ export default function InlineRegisterForm({ title, description, projectTitle }:
 
               {/* Phone */}
               <a
-                href="tel:+84901234567"
+                href="tel:0906113111"
                 className="flex items-center gap-4 p-5 bg-white border-2 border-slate-200 rounded-xl hover:border-[#c5a059] hover:shadow-lg transition-all group"
               >
                 <div className="w-14 h-14 rounded-full bg-[#c5a059] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -196,7 +217,7 @@ export default function InlineRegisterForm({ title, description, projectTitle }:
                 </div>
                 <div className="flex-1">
                   <p className="font-semibold text-slate-900 mb-1">{t("hotlineTitle")}</p>
-                  <p className="text-sm text-slate-600">{t("hotlineNumber")}</p>
+                  <p className="text-sm text-slate-600">0906 113 111</p>
                 </div>
                 <svg className="w-5 h-5 text-slate-400 group-hover:text-[#c5a059] group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

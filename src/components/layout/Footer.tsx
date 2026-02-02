@@ -32,7 +32,7 @@ export default function Footer() {
             <p className="text-white/60 text-sm leading-relaxed">
               {t('addressText')}<br />
               Email: contact@vnluxuryrealty.com<br />
-              Hotline: 0909 888 999
+              Hotline: 0906 113 111
             </p>
           </div>
         </div>

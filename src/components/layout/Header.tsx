@@ -192,7 +192,7 @@ export default function Header({ recentProjects = [] }: { recentProjects?: Proje
             </div>
 
             <Link 
-              href="tel:0123456789" 
+              href="tel:0906113111" 
               className="hidden sm:block bg-[#c5a059] text-white px-8 py-3 rounded-sm font-bold text-[12px] tracking-[0.2em] hover:bg-[#b08d4a] transition-all shadow-lg"
             >
               {t('contact')}
@@ -291,7 +291,7 @@ export default function Header({ recentProjects = [] }: { recentProjects?: Proje
               </div>
               
               <Link 
-                href="tel:0123456789" 
+                href="tel:0906113111" 
                 className="w-full bg-accent text-white py-5 rounded-lg flex items-center justify-center font-bold text-sm tracking-[0.3em] uppercase shadow-xl active:scale-[0.98] transition-transform"
               >
                 {t('contact')}
