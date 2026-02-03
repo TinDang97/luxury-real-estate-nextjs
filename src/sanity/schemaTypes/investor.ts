@@ -48,6 +48,14 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'missionImage',
+      title: 'Mission Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: 'vision',
       title: 'Vision',
       type: 'text',

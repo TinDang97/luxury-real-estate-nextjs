@@ -36,7 +36,8 @@
     "recentProjects": "Dự án mới nhất",
     "investors": "Chủ đầu tư",
     "topInvestors": "Danh sách nhà đầu tư",
-    "language": "Ngôn ngữ"
+    "language": "Ngôn ngữ",
+    "aboutDesc": "Đơn vị phân phối bất động sản hạng sang hàng đầu tại Việt Nam."
   },
   "Footer": {
     "about": "Về Chúng Tôi",
@@ -98,6 +99,8 @@
     "hotlineNumber": "0906 113 111",
     "zaloTitle": "Chat qua Zalo",
     "kakaoTitle": "Chat qua KakaoTalk",
+    "facebookTitle": "Facebook Messenger",
+    "facebookDescription": "Nhắn tin cho chúng tôi trên Facebook",
     "workingHours": "Thứ 2 - Chủ Nhật, 8:00 - 21:00 (GMT+7)",
     "modalTitle": "Tìm Hiểu Thêm",
     "modalDescription": "Đăng ký để nhận thông tin và tin tức độc quyền về {project}.",
@@ -125,5 +128,10 @@
     "yearsExcellence": "Năm kinh nghiệm quốc tế và phát triển cộng đồng thịnh vượng.",
     "inspirationTitle": "Kiến trúc truyền cảm hứng, Trải nghiệm bền vững.",
     "discoverExcellence": "Khám Phá Sự Hoàn Hảo"
+  },
+  "Investor": {
+    "title": "Chủ Đầu Tư",
+    "aboutDeveloper": "Về Chủ Đầu Tư",
+    "viewProfile": "Xem Hồ Sơ"
   }
 }

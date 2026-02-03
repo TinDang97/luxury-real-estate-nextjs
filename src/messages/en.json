@@ -98,6 +98,8 @@
     "hotlineNumber": "0906 113 111",
     "zaloTitle": "Chat on Zalo",
     "kakaoTitle": "Chat on KakaoTalk",
+    "facebookTitle": "Facebook Messenger",
+    "facebookDescription": "Message us on Facebook",
     "workingHours": "Monday - Sunday, 8:00 AM - 9:00 PM (GMT+7)",
     "modalTitle": "Learn More",
     "modalDescription": "Register to receive exclusive information and news about {project}.",
@@ -125,5 +127,10 @@
     "yearsExcellence": "Years of international excellence and community development.",
     "inspirationTitle": "Architecture that inspires, Experiences that endure.",
     "discoverExcellence": "Discover Excellence"
+  },
+  "Investor": {
+    "title": "Investor",
+    "aboutDeveloper": "About Developer",
+    "viewProfile": "View Profile"
   }
 }

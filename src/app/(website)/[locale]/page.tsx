@@ -4,6 +4,7 @@ import { client } from '@/sanity/lib/client';
 import { projectsQuery, investorsQuery } from '@/sanity/lib/queries';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
+import { getTranslations } from "next-intl/server";
 
 export default async function Home({
   params
@@ -11,6 +12,8 @@ export default async function Home({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations();
+  const tFooter = await getTranslations('Footer');
   const projects = await client.fetch(projectsQuery, { language: locale });
   const investors = await client.fetch(investorsQuery, { language: locale });
 
@@ -23,7 +26,7 @@ export default async function Home({
         <div className="text-center mb-20 relative">
           <div className="text-[40px] xs:text-[60px] sm:text-[80px] md:text-[120px] font-black text-slate-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-60 tracking-tighter uppercase whitespace-nowrap">Featured</div>
           <h2 className="text-6xl md:text-7xl font-bold mb-6 tracking-tight">
-            {locale === 'vn' ? 'Dựa Án Tiêu Biểu' : locale === 'ko' ? '주요 프로젝트' : 'Featured Projects'}
+            {t('Header.recentProjects')}
           </h2>
           <div className="w-20 h-[2px] bg-accent mx-auto"></div>
         </div>
@@ -78,10 +81,10 @@ export default async function Home({
           <div className="lg:w-1/2">
             <p className="text-accent font-black uppercase tracking-[0.4em] text-[12px] sm:text-[14px] mb-4 sm:mb-8">About Us</p>
             <h2 className="text-4xl md:text-7xl font-bold mb-8 md:mb-10 leading-tight">
-              {locale === 'vn' ? 'Chuyên Gia Bất Động Sản Hạng Sang' : locale === 'ko' ? '럭셔리 부동산 전문가' : 'Luxury Real Estate Specialists'}
+              {t('InvestorDetailPage.legacyTitle')}
             </h2>
             <div className="space-y-8 text-slate-500 text-lg font-light leading-relaxed">
-              <p>{locale === 'vn' ? 'Với hơn 10 năm kinh nghiệm trong lĩnh vực bất động sản phân khúc hạng sang tại Việt Nam, chúng tôi tự hào mang đến cho khách hàng những giải pháp đầu tư tối ưu.' : locale === 'ko' ? '베트남 럭셔리 부동산 분야에서 10년 이상의 경험을 바탕으로 고객에게 최적의 투자 솔루션을 제공하는 것을 자랑스럽게 생각합니다.' : 'With over a decade of dedication to Vietnam\'s ultra-luxury sector, we pride ourselves on curating the most exclusive investment opportunities for our elite clientele.'}</p>
+              <p>{t('Header.aboutDesc') || t('Footer.aboutDesc')}</p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-slate-200">
                 <div>
@@ -94,11 +97,21 @@ export default async function Home({
                 </div>
               </div>
 
-              <Link href={`/${locale}/#contact`} className="inline-block mt-8 md:mt-12 bg-[#0c1a2c] text-white py-4 md:py-5 px-10 md:px-12 font-bold tracking-[0.2em] text-[11px] md:text-[12px] hover:bg-accent hover:text-white transition-all shadow-2xl">
-                {locale === 'vn' ? 'LIÊN HỆ TƯ VẤN' : locale === 'ko' ? '컨설팅 문의' : 'SCHEDULE CONSULTATION'}
+              <Link href="tel:0906113111" className="inline-block mt-8 md:mt-12 bg-[#0c1a2c] text-white py-4 md:py-5 px-10 md:px-12 font-bold tracking-[0.2em] text-[11px] md:text-[12px] hover:bg-accent hover:text-white transition-all shadow-2xl">
+                {t('Common.contact')}
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Booking Policy Section */}
+      <section className="py-12 px-4 bg-white border-y border-slate-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-xl font-serif text-slate-900 mb-4">{tFooter('bookingPolicy')}</h3>
+          <p className="text-lg text-[#c5a059] font-bold tracking-wide uppercase italic">
+            {tFooter('bookingPolicyText')}
+          </p>
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import { client } from "@/sanity/lib/client";
 import { projectBySlugQuery } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 // import Hero from "@/components/cms/Hero";
 import { PortableText } from "next-sanity";
 import RegisterButton from "@/components/features/RegisterButton";
@@ -20,6 +21,7 @@ const Banner = dynamic(() => import("@/components/cms/Banner"));
 const VideoSection = dynamic(() => import("@/components/cms/VideoSection"));
 const InlineRegisterForm = dynamic(() => import("@/components/features/InlineRegisterForm"));
 const FeatureListBlock = dynamic(() => import("@/components/features/FeatureListBlock"));
+import InvestorSection from "@/components/sections/InvestorSection";
 
 // Page Builder Map
 const components = {
@@ -172,7 +174,8 @@ export default async function ProjectPage({
   params: Promise<{ slug: string; locale: string }>;
 }) {
   const { slug, locale } = await params;
-  const t = await getTranslations('Footer');
+  const t = await getTranslations();
+  const tFooter = await getTranslations('Footer');
   const project = await client.fetch(projectBySlugQuery, { slug, language: locale });
 
   if (!project) {
@@ -290,12 +293,17 @@ export default async function ProjectPage({
         }}
       />
       
+      {/* Investor Section */}
+      {project.investor && (
+        <InvestorSection investor={project.investor} locale={locale} />
+      )}
+
       {/* Booking Policy Section */}
       <section className="py-12 px-4 bg-white border-t border-slate-100">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-xl font-serif text-slate-900 mb-4">{t('Footer.bookingPolicy')}</h3>
+          <h3 className="text-xl font-serif text-slate-900 mb-4">{tFooter('bookingPolicy')}</h3>
           <p className="text-lg text-[#c5a059] font-bold tracking-wide uppercase italic">
-            {t('Footer.bookingPolicyText')}
+            {tFooter('bookingPolicyText')}
           </p>
         </div>
       </section>

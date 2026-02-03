@@ -55,9 +55,9 @@ export default async function InvestorDetailPage({
             
             <div className="relative">
               <div className="aspect-square bg-slate-100 rounded-sm overflow-hidden relative shadow-3xl">
-                 {investor.coverImage && (
+                 {(investor.missionImage || investor.coverImage) && (
                     <Image 
-                      src={urlFor(investor.coverImage).url()} 
+                      src={urlFor(investor.missionImage || investor.coverImage).url()} 
                       alt={investor.name}
                       fill
                       className="object-cover opacity-90 scale-110"

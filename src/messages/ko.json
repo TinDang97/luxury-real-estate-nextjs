@@ -98,6 +98,8 @@
     "hotlineNumber": "0906 113 111",
     "zaloTitle": "Zalo로 채팅",
     "kakaoTitle": "KakaoTalk으로 채팅",
+    "facebookTitle": "Facebook Messenger",
+    "facebookDescription": "페이스북으로 메시지 보내기",
     "workingHours": "월요일 - 일요일, 오전 8:00 - 오후 9:00 (GMT+7)",
     "modalTitle": "자세히 알아보기",
     "modalDescription": "{project}에 대한 독점 정보 및 뉴스를 받으려면 등록하세요.",
@@ -125,5 +127,10 @@
     "yearsExcellence": "국제적인 탁월함과 지역 사회 발전의 역사.",
     "inspirationTitle": "영감을 주는 건축, 영속하는 경험.",
     "discoverExcellence": "탁월함의 발견"
+  },
+  "Investor": {
+    "title": "투자자",
+    "aboutDeveloper": "개발사 정보",
+    "viewProfile": "프로필 보기"
   }
 }

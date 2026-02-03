@@ -11,6 +11,14 @@ export const projectBySlugQuery = groq`
     overview,
     location,
     developer,
+    "investor": *[_type == "investor" && references(^._id)][0] {
+      _id,
+      name,
+      "slug": slug.current,
+      logo,
+      coverImage,
+      vision
+    },
     price,
     status,
     gallery {
